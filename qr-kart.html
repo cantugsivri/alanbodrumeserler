@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALAN Art & Coffee — QR Kart Üretici</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <style>
+    :root {
+      --cream: #FCFAF6;
+      --bej: #F6F3ED;
+      --gold: #C5A059;
+      --dark: #1C1B1A;
+      --muted: #A39F97;
+      --border: #E8E3D7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #EEEAE2;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 40px 20px;
+    }
+
+    /* ── Setup Panel ── */
+    .setup-panel {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      padding: 36px 40px;
+      max-width: 540px;
+      width: 100%;
+      margin-bottom: 48px;
+    }
+
+    .setup-panel h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+
+    .setup-panel p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      font-weight: 300;
+    }
+
+    .url-row {
+      display: flex;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .url-input {
+      flex: 1;
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      background: var(--bej);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.88rem;
+      color: var(--dark);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .url-input:focus {
+      border-color: var(--gold);
+    }
+
+    .url-input::placeholder {
+      color: var(--muted);
+    }
+
+    .gen-btn {
+      padding: 12px 22px;
+      background: var(--dark);
+      color: var(--cream);
+      border: none;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+
+    .gen-btn:hover { background: var(--gold); }
+
+    .print-btn {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+      padding: 12px;
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .print-btn:hover {
+      background: var(--gold);
+      color: var(--cream);
+    }
+
+    /* ── QR Preview Card ── */
+    .card-wrapper {
+      display: none;
+    }
+
+    .card-wrapper.visible {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* The actual printable card */
+    .qr-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      width: 340px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 32px 36px;
+      position: relative;
+    }
+
+    /* Gold top bar */
+    .qr-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .card-logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      color: var(--dark);
+      margin-bottom: 3px;
+    }
+
+    .card-sub {
+      font-size: 0.55rem;
+      letter-spacing: 0.32em;
+      color: var(--gold);
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+
+    .qr-frame {
+      border: 1px solid var(--border);
+      padding: 16px;
+      background: white;
+      margin-bottom: 28px;
+    }
+
+    #qrcode canvas,
+    #qrcode img {
+      display: block;
+    }
+
+    .card-divider {
+      width: 40px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.5;
+      margin-bottom: 20px;
+    }
+
+    .card-invite {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--dark);
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 12px;
+    }
+
+    .card-hint {
+      font-size: 0.68rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .card-url-small {
+      margin-top: 20px;
+      font-size: 0.6rem;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      word-break: break-all;
+      text-align: center;
+      opacity: 0.7;
+    }
+
+    /* ── Print Styles ── */
+    @media print {
+      body {
+        background: white;
+        padding: 0;
+        justify-content: center;
+      }
+
+      .setup-panel { display: none !important; }
+
+      .card-wrapper {
+        display: flex !important;
+        justify-content: center;
+        margin-top: 60px;
+      }
+
+      .qr-card {
+        border: 1px solid #E8E3D7;
+        box-shadow: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Setup Panel -->
+  <div class="setup-panel">
+    <h1>QR Kart Üretici</h1>
+    <p>Uygulamanın yayın URL'sini girerek kafeye asılacak baskı kartını oluşturun.</p>
+
+    <div class="url-row">
+      <input
+        type="url"
+        class="url-input"
+        id="urlInput"
+        placeholder="https://alan-art.netlify.app"
+        value=""
+      />
+      <button class="gen-btn" onclick="generateQR()">Oluştur</button>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">🖨 Kartı Yazdır / PDF Kaydet</button>
+  </div>
+
+  <!-- QR Card Preview -->
+  <div class="card-wrapper" id="cardWrapper">
+    <div class="qr-card">
+      <div class="card-logo-text">ALAN</div>
+      <div class="card-sub">Art &amp; Coffee</div>
+
+      <div class="qr-frame">
+        <div id="qrcode"></div>
+      </div>
+
+      <div class="card-divider"></div>
+
+      <p class="card-invite">Eserleri dijital arşivden<br>keşfetmek için tarayın</p>
+      <p class="card-hint">Kameranızı QR koda doğrultun</p>
+
+      <p class="card-url-small" id="urlDisplay"></p>
+    </div>
+  </div>
+
+  <script>
+    let qrInstance = null;
+
+    function generateQR() {
+      const url = document.getElementById('urlInput').value.trim();
+      if (!url) {
+        alert('Lütfen geçerli bir URL girin.');
+        return;
+      }
+
+      const container = document.getElementById('qrcode');
+      container.innerHTML = '';
+
+      if (qrInstance) {
+        qrInstance.clear();
+        qrInstance = null;
+      }
+
+      qrInstance = new QRCode(container, {
+        text: url,
+        width: 200,
+        height: 200,
+        colorDark: '#1C1B1A',
+        colorLight: '#ffffff',
+        correctLevel: QRCode.CorrectLevel.H
+      });
+
+      document.getElementById('urlDisplay').textContent = url;
+      document.getElementById('cardWrapper').classList.add('visible');
+    }
+
+    // Enter key support
+    document.getElementById('urlInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') generateQR();
+    });
+  </script>
+</body>
+</html>

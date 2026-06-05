@@ -1,0 +1,948 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Outfit:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  /* Premium Serif & Clean Sans Fonts */
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Outfit', sans-serif;
+
+  /* Art Gallery Warm Minimalist Colors */
+  --color-bg-primary: #FCFAF6;       /* Saf Sıcak Krem / Kağıt Beyazı */
+  --color-bg-secondary: #F6F3ED;     /* Hafif Koyu Sıcak Bej */
+  --color-border: #E8E3D7;           /* Saç Teli İnceliğinde Bej Çerçeve */
+  --color-border-hover: #C5A059;     /* İnce Altın Çerçeve */
+  --color-text-primary: #1C1B1A;     /* Net Kömür Karası (Yumuşak Siyah) */
+  --color-text-secondary: #6B6862;   /* Dingin Galeri Grisi */
+  --color-text-muted: #A39F97;       /* Soluk Bej (Detaylar için) */
+  
+  /* Accent Gold */
+  --color-gold: #C5A059;             /* Pirinç / Mat Altın */
+  --color-gold-hover: #AB8842;
+  --color-gold-light: rgba(197, 160, 89, 0.05);
+
+  /* System State (Toprak Tonları) */
+  --color-sold: #B35E50;             /* Terracotta (Özel Koleksiyon) */
+  --color-overlay: rgba(28, 27, 26, 0.2); /* Soft low contrast overlay */
+
+  /* Spacing & Sizes */
+  --max-width-mobile: 460px;
+  --transition-gallery: all 0.5s cubic-bezier(0.15, 0.85, 0.35, 1);
+  --transition-fast: all 0.25s ease;
+  --radius-minimal: 4px;
+}
+
+/* Reset & Clean Setup */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global Elements Reset */
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+input {
+  border: none;
+  background: none;
+  font-family: inherit;
+  outline: none;
+}
+
+
+/* App Container - Centered Minimal Mobile Framing */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-primary);
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width-mobile);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Minimalist Centered Header with Massive Spacing */
+.brand-header {
+  padding: 48px 0 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 1px solid rgba(232, 227, 215, 0.3);
+}
+
+.brand-logo-container {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.brand-logo-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  transition: var(--transition-gallery);
+}
+
+
+.brand-logo-img:hover {
+  border-color: var(--color-gold);
+}
+
+.brand-text-wrapper {
+  text-align: center;
+}
+
+.brand-main-title {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 1;
+  color: var(--color-text-primary);
+}
+
+.brand-sub-title {
+  font-size: 0.6rem;
+  font-weight: 400;
+  letter-spacing: 0.3em;
+  color: var(--color-gold);
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+/* Minimal Settings Button (Hairline & Tiny) */
+.minimal-settings-btn {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  color: var(--color-text-muted);
+  opacity: 0.6;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minimal-settings-btn:hover {
+  opacity: 1;
+  color: var(--color-gold);
+}
+
+/* Hero Typography (Pure & Spacious) */
+.minimal-hero {
+  text-align: center;
+  padding: 40px 0 32px;
+}
+
+.minimal-hero h2 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.minimal-hero p {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/* Fine-line Search Section */
+.search-container {
+  margin-bottom: 32px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.minimal-search-wrapper {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid var(--color-border);
+  padding: 8px 2px;
+  gap: 10px;
+  transition: var(--transition-fast);
+}
+
+.minimal-search-wrapper:focus-within {
+  border-color: var(--color-text-primary);
+}
+
+.minimal-search-input {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  font-weight: 300;
+}
+
+.minimal-search-input::placeholder {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.minimal-search-icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+/* Flat Text Dot Filters (Yatay Kaydırılabilir ve Çizgisiz) */
+.minimal-filters {
+  margin-bottom: 36px;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox scrollbar gizleme */
+  -ms-overflow-style: none; /* IE/Edge scrollbar gizleme */
+  padding: 4px 0;
+}
+
+.minimal-filters::-webkit-scrollbar {
+  display: none; /* Chrome/Safari scrollbar gizleme */
+}
+
+.filter-links-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding: 0 24px;
+  width: max-content;
+  margin: 0 auto; /* İçerik ekrana sığarsa ortalar, sığmazsa soldan taşır */
+}
+
+.filter-link-btn {
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+  padding: 4px 0;
+  border: none;
+  background: none;
+  border-bottom: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.filter-link-btn:hover {
+  color: var(--color-gold);
+}
+
+.filter-link-btn.active {
+  color: var(--color-text-primary);
+  font-weight: 500;
+  border-bottom: 1px solid var(--color-gold);
+}
+
+.filter-dot {
+  font-size: 0.5rem;
+  color: var(--color-border);
+  opacity: 0.5;
+  user-select: none;
+}
+
+/* Clean Gallery Grid (No Shadows, Flat layout) */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 16px; /* High vertical gap for spacious breathe */
+  padding-bottom: 64px;
+}
+
+.results-label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(232, 227, 215, 0.2);
+  padding-bottom: 12px;
+}
+
+/* Flat Artwork Card */
+.gallery-card {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  min-width: 0;
+}
+
+.gallery-card-frame {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  transition: var(--transition-gallery);
+  margin-bottom: 12px;
+}
+
+.gallery-card:hover .gallery-card-frame {
+  border-color: var(--color-border-hover);
+}
+
+.gallery-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-gallery);
+}
+
+.gallery-card:hover .gallery-card-image {
+  transform: scale(1.03);
+}
+
+/* Fallback Canvas (Pure Beige + Serif Number) */
+.minimal-fallback-canvas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-secondary);
+  position: relative;
+}
+
+.fallback-number-serif {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  color: var(--color-text-muted);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+}
+
+/* Subtle flat sold text */
+.sold-label-text {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-sold);
+  font-weight: 500;
+  background-color: rgba(252, 250, 246, 0.9);
+  padding: 2px 6px;
+  border: 1px solid var(--color-border);
+}
+
+/* Artwork Info (Minimalistic & Thin) */
+.gallery-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.card-num-label {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-gold);
+  font-weight: 400;
+}
+
+.card-title-label {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+.card-desc-label {
+  font-size: 0.72rem;
+  color: var(--color-text-secondary);
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card-price-label {
+  margin-top: 4px;
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+}
+
+.card-price-label .tl-price {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  margin-left: 6px;
+}
+
+.card-price-label .exhibition-only {
+  color: var(--color-text-muted);
+  font-style: italic;
+  font-size: 0.75rem;
+}
+
+/* Slide-up Boutique Detail Sheet */
+.boutique-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 200;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.boutique-sheet {
+  width: 100%;
+  max-width: var(--max-width-mobile);
+  height: 86vh;
+  background-color: var(--color-bg-primary);
+  border-top: 1px solid var(--color-border);
+  overflow-y: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.6s cubic-bezier(0.15, 0.85, 0.35, 1) forwards;
+}
+
+.boutique-handle {
+  width: 32px;
+  height: 3px;
+  background-color: var(--color-border);
+  margin: 14px auto 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.boutique-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  color: var(--color-text-muted);
+  z-index: 10;
+  transition: var(--transition-fast);
+}
+
+.boutique-close-btn:hover {
+  color: var(--color-text-primary);
+}
+
+/* Detail Visuals */
+.boutique-visual-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.1 / 1;
+  background-color: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutique-visual-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+.boutique-visual-canvas {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boutique-visual-canvas .fallback-number-serif {
+  font-size: 3.5rem;
+}
+
+.boutique-sold-banner {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-sold);
+  font-weight: 500;
+  background-color: var(--color-bg-primary);
+  padding: 4px 10px;
+  border: 1px solid var(--color-border);
+}
+
+/* Detail Body & Info (Flat & High-contrast whitespace) */
+.boutique-body {
+  padding: 32px 24px;
+}
+
+.boutique-header-meta {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+
+.boutique-title {
+  font-family: var(--font-serif);
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--color-text-primary);
+  margin-bottom: 16px;
+}
+
+.boutique-desc-block {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 28px;
+}
+
+/* Minimalist list information (instead of dashboard boxes) */
+.boutique-specs-list {
+  margin-bottom: 32px;
+  border-top: 1px solid rgba(232, 227, 215, 0.4);
+  padding-top: 20px;
+}
+
+.specs-list-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(232, 227, 215, 0.2);
+}
+
+.specs-row-label {
+  color: var(--color-text-secondary);
+  font-weight: 300;
+}
+
+.specs-row-value {
+  color: var(--color-text-primary);
+  font-weight: 400;
+}
+
+/* Value block (Pure Minimal) */
+.boutique-price-block {
+  margin-bottom: 32px;
+}
+
+.boutique-price-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+
+.boutique-price-values {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.boutique-price-values .tl-sub {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+}
+
+.boutique-price-values .exhibition-text {
+  font-size: 1.3rem;
+  color: var(--color-gold);
+  font-style: italic;
+}
+
+/* Hairline WhatsApp CTA Button */
+.boutique-cta-wrapper {
+  margin-bottom: 40px;
+}
+
+.boutique-inquiry-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-text-primary);
+  color: var(--color-text-primary);
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.boutique-inquiry-btn:hover {
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+}
+
+.boutique-inquiry-btn svg {
+  margin-right: 8px;
+}
+
+.boutique-sold-btn {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background-color: var(--color-bg-secondary);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: not-allowed;
+}
+
+.boutique-divider {
+  border: 0;
+  height: 1px;
+  background-color: var(--color-border);
+  opacity: 0.3;
+  margin-bottom: 32px;
+}
+
+/* Similar Artworks List */
+.boutique-similar-section h3 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  color: var(--color-text-primary);
+}
+
+.boutique-similar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.similar-row-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(232, 227, 215, 0.2);
+  transition: var(--transition-fast);
+}
+
+.similar-row-item:hover {
+  border-bottom-color: var(--color-gold);
+}
+
+.similar-row-img-frame {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-secondary);
+}
+
+.similar-row-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.similar-row-canvas {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.similar-row-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.similar-row-name {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text-primary);
+}
+
+.similar-row-num {
+  font-size: 0.7rem;
+  color: var(--color-gold);
+}
+
+.similar-row-price {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+/* Lightbox Modal (Ultra Fine) */
+.fine-lightbox {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(252, 250, 246, 0.98);
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.fine-lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  color: var(--color-text-primary);
+  opacity: 0.6;
+  transition: var(--transition-fast);
+}
+
+.fine-lightbox-close:hover {
+  opacity: 1;
+}
+
+.fine-lightbox-img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg-secondary);
+}
+
+.fine-lightbox-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fine-lightbox-info h3 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.fine-lightbox-info p {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+}
+
+/* Minimalist AdminPanel overlay & styling */
+.minimal-admin-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--color-overlay);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 250;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.minimal-admin-modal {
+  background-color: var(--color-bg-primary);
+  width: 100%;
+  max-width: var(--max-width-mobile);
+  max-height: 80vh;
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.minimal-admin-header {
+  padding: 24px 20px 16px;
+  border-bottom: 1px solid rgba(232, 227, 215, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minimal-admin-header h2 {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.minimal-admin-content {
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.minimal-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.minimal-form-group label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.minimal-form-group input {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  background-color: #FFFFFF;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+  transition: var(--transition-fast);
+}
+
+.minimal-form-group input:focus {
+  border-color: var(--color-text-primary);
+}
+
+.minimal-save-btn {
+  padding: 14px;
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+}
+
+.minimal-save-btn:hover {
+  background-color: var(--color-gold);
+}
+
+.minimal-reset-btn {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  color: var(--color-sold);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  transition: var(--transition-fast);
+  margin-top: 8px;
+}
+
+.minimal-reset-btn:hover {
+  background-color: rgba(179, 94, 80, 0.05);
+}
+
+/* Skeleton loader for minimalist look */
+.skeleton-row-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 16px;
+}
+
+.skeleton-flat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-flat-img {
+  aspect-ratio: 1/1;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+}
+
+.skeleton-flat-text {
+  height: 10px;
+  background-color: var(--color-bg-secondary);
+  width: 70%;
+}
+
+.skeleton-flat-text.short {
+  width: 40%;
+}
+
+/* Gallery Footer */
+.gallery-footer {
+  padding: 48px 24px;
+  text-align: center;
+  border-top: 1px solid rgba(232, 227, 215, 0.3);
+  margin-top: auto;
+}
+
+.footer-logo-title {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
+  color: var(--color-text-primary);
+  margin-bottom: 6px;
+}
+
+.footer-copy {
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+}
+
+/* Desktop Previewer Box Styling */
+@media (min-width: 480px) {
+  body {
+    background-color: #E2DDD5;
+  }
+  
+  .app-container {
+    width: 100%;
+    max-width: var(--max-width-mobile);
+    margin: 0 auto;
+    box-shadow: 0 0 80px rgba(28, 27, 26, 0.06);
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+  }
+  
+  .boutique-sheet {
+    border-left: 1px solid var(--color-border);
+    border-right: 1px solid var(--color-border);
+  }
+}
