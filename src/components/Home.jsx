@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { fetchArtworks } from '../services/sheets';
 import ArtworkCard from './ArtworkCard';
 import ArtworkDetail from './ArtworkDetail';
-import AdminPanel from './AdminPanel';
 import logoImg from '../assets/logo.jpeg';
 
 export default function Home() {
@@ -11,26 +10,18 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('All');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
-  const [isAdminOpen, setIsAdminOpen] = useState(false);
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
 
   // Load artworks
   useEffect(() => {
     async function loadData() {
       setLoading(true);
       const data = await fetchArtworks();
-      
-      // Clean data: ensure basic fields exist
       const cleanData = data.filter(item => item.artwork_name);
       setArtworks(cleanData);
       setLoading(false);
     }
     loadData();
-  }, [refreshTrigger]);
-
-  const handleRefresh = () => {
-    setRefreshTrigger(prev => prev + 1);
-  };
+  }, []);
 
   // Get unique locations for clean flat link separators
   const locations = ['All', ...new Set(artworks.map(art => art.cafe_location).filter(Boolean))];
@@ -59,18 +50,6 @@ export default function Home() {
       
       {/* Centered Large Logo & Minimal Header */}
       <header className="brand-header">
-        {/* Subtle, tiny settings gears icon placed elegantly in top-right */}
-        <button 
-          className="minimal-settings-btn" 
-          onClick={() => setIsAdminOpen(true)}
-          aria-label="Veri Bağlantısı"
-          title="Google Sheets Ayarları"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-            <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 11-2.83-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 112.83-2.83l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 112.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
 
         <div className="brand-logo-container">
           <img src={logoImg} alt="ALAN Art & Coffee Logo" className="brand-logo-img" />
@@ -196,12 +175,7 @@ export default function Home() {
         />
       )}
 
-      {/* Minimal Admin Panel Configuration Modal */}
-      <AdminPanel 
-        isOpen={isAdminOpen}
-        onClose={() => setIsAdminOpen(false)}
-        onRefresh={handleRefresh}
-      />
+
     </div>
   );
 }
