@@ -53,10 +53,6 @@ export default function Home() {
         <div className="brand-logo-container">
           <img src={logoImg} alt="ALAN Art & Coffee Logo" className="brand-logo-img" />
         </div>
-        <div className="brand-text-wrapper">
-          <h1 className="brand-main-title">ALAN</h1>
-          <span className="brand-sub-title">ART & COFFEE</span>
-        </div>
       </header>
 
       {/* Main Body Content */}

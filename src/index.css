@@ -94,12 +94,12 @@ input {
 }
 
 .brand-logo-container {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   position: relative;
 }
 
 .brand-logo-img {
-  height: 80px;
+  height: 110px;
   width: auto;
   object-fit: contain;
   transition: var(--transition-gallery);
