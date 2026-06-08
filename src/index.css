@@ -946,3 +946,255 @@ input {
     border-right: 1px solid var(--color-border);
   }
 }
+
+/* ── Dil Seçici (Language Switcher) ── */
+.lang-switcher {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 10;
+}
+
+.lang-btn {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--color-text-muted);
+  padding: 3px 0;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition-fast);
+  text-transform: uppercase;
+}
+
+.lang-btn:hover {
+  color: var(--color-text-secondary);
+}
+
+.lang-btn.active {
+  color: var(--color-text-primary);
+  border-bottom-color: var(--color-gold);
+}
+
+.lang-divider {
+  font-size: 0.55rem;
+  color: var(--color-border);
+  user-select: none;
+  margin-top: 1px;
+}
+
+/* Çeviri yüklenirken pulse animasyonu */
+.translating-pulse {
+  opacity: 0.4;
+  animation: pulse-opacity 1s ease-in-out infinite;
+}
+
+@keyframes pulse-opacity {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.15; }
+}
+
+/* ==========================================
+   Carousel & Multi-Image Gallery Styles
+   ========================================== */
+
+.boutique-carousel-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+.boutique-carousel-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.boutique-carousel-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.boutique-carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: zoom-in;
+}
+
+/* Dots Indicator */
+.boutique-carousel-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+  background-color: rgba(252, 250, 246, 0.6);
+  padding: 4px 8px;
+  border-radius: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.boutique-carousel-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-text-secondary);
+  opacity: 0.4;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.boutique-carousel-dot.active {
+  background-color: var(--color-gold);
+  opacity: 1;
+  transform: scale(1.3);
+}
+
+/* Arrow Navigation */
+.boutique-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(252, 250, 246, 0.9);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.boutique-visual-frame:hover .boutique-carousel-arrow {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.boutique-carousel-arrow:hover {
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.boutique-carousel-arrow.prev {
+  left: 12px;
+}
+
+.boutique-carousel-arrow.next {
+  right: 12px;
+}
+
+/* Lightbox Gallery Styles */
+.lightbox-carousel-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.lightbox-carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(252, 250, 246, 0.9);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.lightbox-carousel-arrow:hover {
+  background-color: var(--color-bg-primary);
+  border-color: var(--color-gold);
+  color: var(--color-gold);
+}
+
+.lightbox-carousel-arrow.prev {
+  left: -60px;
+}
+
+.lightbox-carousel-arrow.next {
+  right: -60px;
+}
+
+@media (max-width: 768px) {
+  .boutique-carousel-arrow {
+    opacity: 0.6;
+    pointer-events: auto;
+  }
+  .lightbox-carousel-arrow {
+    background-color: rgba(252, 250, 246, 0.95);
+  }
+  .lightbox-carousel-arrow.prev {
+    left: 10px;
+  }
+  .lightbox-carousel-arrow.next {
+    right: 10px;
+  }
+}
+
+/* Card Multi Image Indicator overlay */
+.card-multi-image-indicator {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  background-color: rgba(252, 250, 246, 0.7);
+  padding: 4px 8px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 5;
+  pointer-events: none;
+  border: 1px solid rgba(232, 227, 215, 0.5);
+  box-shadow: 0 2px 6px rgba(28, 27, 26, 0.04);
+}
+
+.card-multi-image-indicator .indicator-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-text-secondary);
+  opacity: 0.4;
+  transition: all 0.2s ease;
+}
+
+.card-multi-image-indicator .indicator-dot.active {
+  background-color: var(--color-gold);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+

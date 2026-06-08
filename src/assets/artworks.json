@@ -11,9 +11,12 @@
     "description": "AKHILLEUS (AŞİL) - Mermer taş ve cam, 72*40 cm",
     "price_tl": 25000,
     "price_eur": 500,
-    "image_url": "",
+    "image_url": "https://res.cloudinary.com/dzimaffgf/image/upload/v1780915770/alan-art-coffee/eser_1_a%C5%9Fil.jpg",
+    "image_url_2": "https://res.cloudinary.com/dzimaffgf/image/upload/v1780915771/alan-art-coffee/eser_2_antik_kad%C4%B1n_fig%C3%BCr%C3%BC.jpg",
+    "image_url_3": "https://res.cloudinary.com/dzimaffgf/image/upload/v1780915772/alan-art-coffee/eser_3_nike1.jpg",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 2,
@@ -29,7 +32,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 3,
@@ -45,7 +49,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": "Marble mosaic crafted with authentic Bodrum sand."
   },
   {
     "id": 4,
@@ -61,7 +66,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": "Marble mosaic crafted with authentic Bodrum sand."
   },
   {
     "id": 5,
@@ -77,7 +83,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": "Marble mosaic crafted with authentic Bodrum sand."
   },
   {
     "id": 6,
@@ -93,7 +100,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 7,
@@ -109,7 +117,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 8,
@@ -125,7 +134,8 @@
     "price_eur": 60,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 9,
@@ -141,7 +151,8 @@
     "price_eur": 60,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 10,
@@ -157,7 +168,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 11,
@@ -173,7 +185,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 12,
@@ -189,7 +202,8 @@
     "price_eur": 60,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": "Natural stone mosaic."
   },
   {
     "id": 13,
@@ -205,7 +219,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": "Natural stone mosaic."
   },
   {
     "id": 14,
@@ -221,7 +236,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 15,
@@ -237,7 +253,8 @@
     "price_eur": 50,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": "Handcrafted natural stone mosaic."
   },
   {
     "id": 16,
@@ -253,7 +270,8 @@
     "price_eur": 50,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": "Handcrafted natural stone mosaic."
   },
   {
     "id": 17,
@@ -269,7 +287,8 @@
     "price_eur": 50,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": "Handcrafted natural stone mosaic."
   },
   {
     "id": 18,
@@ -285,7 +304,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 19,
@@ -301,7 +321,8 @@
     "price_eur": 240,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 20,
@@ -317,7 +338,8 @@
     "price_eur": 140,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 21,
@@ -333,7 +355,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 22,
@@ -349,7 +372,8 @@
     "price_eur": 1300,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 23,
@@ -365,7 +389,8 @@
     "price_eur": 1300,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 24,
@@ -381,7 +406,8 @@
     "price_eur": 50,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": "Hand-laid stone mosaic artwork."
   },
   {
     "id": 25,
@@ -397,7 +423,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": "Hand-laid stone mosaic artwork."
   },
   {
     "id": 26,
@@ -413,7 +440,8 @@
     "price_eur": 1000,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": "Handcrafted marble mosaic."
   },
   {
     "id": 27,
@@ -429,7 +457,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": "Handcrafted marble mosaic."
   },
   {
     "id": 28,
@@ -445,7 +474,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 29,
@@ -461,7 +491,8 @@
     "price_eur": 60,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 30,
@@ -477,7 +508,8 @@
     "price_eur": 60,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 31,
@@ -493,7 +525,8 @@
     "price_eur": 1200,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 32,
@@ -509,7 +542,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 33,
@@ -525,7 +559,8 @@
     "price_eur": 75,
     "image_url": "",
     "status": "active",
-    "category": "Suluboya Resim"
+    "category": "Suluboya Resim",
+    "description_en": ""
   },
   {
     "id": 34,
@@ -541,7 +576,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 35,
@@ -557,7 +593,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 36,
@@ -573,7 +610,8 @@
     "price_eur": 1300,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 37,
@@ -589,7 +627,8 @@
     "price_eur": 800,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 38,
@@ -605,7 +644,8 @@
     "price_eur": 800,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 39,
@@ -621,7 +661,8 @@
     "price_eur": 800,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 40,
@@ -637,7 +678,8 @@
     "price_eur": 300,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 41,
@@ -653,7 +695,8 @@
     "price_eur": 300,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 42,
@@ -669,7 +712,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 43,
@@ -685,7 +729,8 @@
     "price_eur": 1500,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 44,
@@ -701,7 +746,8 @@
     "price_eur": 800,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 45,
@@ -717,7 +763,8 @@
     "price_eur": 1000,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 46,
@@ -733,7 +780,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 47,
@@ -749,7 +797,8 @@
     "price_eur": 0,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 48,
@@ -765,7 +814,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 49,
@@ -781,7 +831,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 50,
@@ -797,7 +848,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 51,
@@ -813,7 +865,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 52,
@@ -829,7 +882,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 53,
@@ -845,7 +899,8 @@
     "price_eur": 1000,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 54,
@@ -861,7 +916,8 @@
     "price_eur": 600,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 55,
@@ -877,7 +933,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 56,
@@ -893,7 +950,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 57,
@@ -909,7 +967,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 58,
@@ -925,7 +984,8 @@
     "price_eur": 700,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 59,
@@ -941,7 +1001,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 60,
@@ -957,7 +1018,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 61,
@@ -973,7 +1035,8 @@
     "price_eur": 500,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 62,
@@ -989,7 +1052,8 @@
     "price_eur": 300,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 63,
@@ -1005,7 +1069,8 @@
     "price_eur": 400,
     "image_url": "",
     "status": "active",
-    "category": "Mermer Mozaik"
+    "category": "Mermer Mozaik",
+    "description_en": ""
   },
   {
     "id": 64,
@@ -1021,7 +1086,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 65,
@@ -1037,7 +1103,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 66,
@@ -1053,7 +1120,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 67,
@@ -1069,7 +1137,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 68,
@@ -1085,7 +1154,8 @@
     "price_eur": 120,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 69,
@@ -1101,7 +1171,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 70,
@@ -1117,7 +1188,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 71,
@@ -1133,7 +1205,8 @@
     "price_eur": 1200,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 72,
@@ -1149,7 +1222,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 73,
@@ -1165,7 +1239,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 74,
@@ -1181,7 +1256,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 75,
@@ -1197,7 +1273,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 76,
@@ -1213,7 +1290,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 77,
@@ -1229,7 +1307,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 78,
@@ -1245,7 +1324,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 79,
@@ -1261,7 +1341,8 @@
     "price_eur": 50,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 80,
@@ -1277,7 +1358,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 81,
@@ -1293,7 +1375,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 82,
@@ -1309,7 +1392,8 @@
     "price_eur": 250,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 83,
@@ -1325,7 +1409,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 84,
@@ -1341,7 +1426,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 85,
@@ -1357,7 +1443,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 86,
@@ -1373,7 +1460,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Doğal Taş Mozaik"
+    "category": "Doğal Taş Mozaik",
+    "description_en": ""
   },
   {
     "id": 87,
@@ -1389,7 +1477,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 88,
@@ -1405,7 +1494,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 89,
@@ -1421,7 +1511,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 90,
@@ -1437,7 +1528,8 @@
     "price_eur": 150,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 91,
@@ -1453,7 +1545,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 92,
@@ -1469,7 +1562,8 @@
     "price_eur": 130,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 93,
@@ -1485,7 +1579,8 @@
     "price_eur": 200,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 94,
@@ -1501,7 +1596,8 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   },
   {
     "id": 95,
@@ -1517,6 +1613,7 @@
     "price_eur": 100,
     "image_url": "",
     "status": "active",
-    "category": "Cam Mozaik"
+    "category": "Cam Mozaik",
+    "description_en": ""
   }
 ]

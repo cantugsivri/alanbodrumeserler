@@ -78,6 +78,11 @@ export function parseCSV(text) {
       }
     });
 
+    // Handle backward compatibility for image_url_1 as primary image_url
+    if (obj.image_url_1 && !obj.image_url) {
+      obj.image_url = obj.image_url_1;
+    }
+
     if (hasData && obj.artwork_name) {
       // Add a default status if missing
       if (!obj.status) obj.status = 'active';
@@ -122,7 +127,10 @@ export async function fetchArtworks() {
 
   try {
     console.log(`Fetching live artworks from: ${sheetURL}`);
-    const response = await fetch(sheetURL);
+    // Add cache buster parameter to bypass CDN/browser caches for instant updates
+    const separator = sheetURL.includes('?') ? '&' : '?';
+    const fetchURL = `${sheetURL}${separator}_cb=${Date.now()}`;
+    const response = await fetch(fetchURL);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

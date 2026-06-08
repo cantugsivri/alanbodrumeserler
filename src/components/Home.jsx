@@ -29,16 +29,16 @@ export default function Home() {
   // Filter artworks dynamically (supports name, material, and numeric ID search!)
   const filteredArtworks = artworks.filter(art => {
     const query = searchQuery.trim().toLowerCase();
-    
+
     // Check if query is exact numeric ID search
     const isNumericSearch = /^\d+$/.test(query);
     const matchesNumericId = isNumericSearch && art.id.toString() === query;
 
-    const matchesText = 
+    const matchesText =
       art.artwork_name.toLowerCase().includes(query) ||
       (art.material && art.material.toLowerCase().includes(query)) ||
       (art.cafe_location && art.cafe_location.toLowerCase().includes(query));
-    
+
     const matchesSearch = query ? (isNumericSearch ? matchesNumericId : matchesText) : true;
     const matchesLocation = selectedLocation === 'All' || art.cafe_location === selectedLocation;
 
@@ -47,14 +47,12 @@ export default function Home() {
 
   return (
     <div className="app-container">
-      
+
       {/* Centered Large Logo & Minimal Header */}
       <header className="brand-header">
-
         <div className="brand-logo-container">
           <img src={logoImg} alt="ALAN Art & Coffee Logo" className="brand-logo-img" />
         </div>
-        
         <div className="brand-text-wrapper">
           <h1 className="brand-main-title">ALAN</h1>
           <span className="brand-sub-title">ART & COFFEE</span>
@@ -63,8 +61,8 @@ export default function Home() {
 
       {/* Main Body Content */}
       <main className="container">
-        
-        {/* Gallery Hero Title (Calm & Elegant) */}
+
+        {/* Gallery Hero Title */}
         <section className="minimal-hero animate-fade-in">
           <h2>Dijital Sanat Arşivi</h2>
           <p>
@@ -72,16 +70,16 @@ export default function Home() {
           </p>
         </section>
 
-        {/* Minimal Bottom-line Search Bar */}
+        {/* Search Bar */}
         <section className="search-container animate-fade-in-up">
           <div className="minimal-search-wrapper">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="minimal-search-icon">
               <circle cx="11" cy="11" r="8" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M21 21l-4.35-4.35" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <input 
-              type="text" 
-              placeholder="Eser Numarası Giriniz / Enter Artwork No"
+            <input
+              type="text"
+              placeholder="Eser Numarası veya İsim Giriniz"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="minimal-search-input"
@@ -96,7 +94,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Minimal Flat Text-based Link Filters */}
+        {/* Location Filters */}
         <section className="minimal-filters animate-fade-in">
           <div className="filter-links-wrapper">
             {locations.map((loc, idx) => (
@@ -113,7 +111,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Simple Artwork Grid (No dashboard UI complexity) */}
+        {/* Artwork Grid */}
         <section className="artworks-grid-section">
           {loading ? (
             <div className="skeleton-row-container">
@@ -130,12 +128,11 @@ export default function Home() {
               <div className="results-label">
                 Koleksiyondan <strong>{filteredArtworks.length}</strong> Değerli Eser Listeleniyor
               </div>
-              
               <div className="gallery-grid">
                 {filteredArtworks.map(art => (
-                  <ArtworkCard 
-                    key={art.id} 
-                    artwork={art} 
+                  <ArtworkCard
+                    key={art.id}
+                    artwork={art}
                     onClick={() => setSelectedArtwork(art)}
                   />
                 ))}
@@ -145,7 +142,7 @@ export default function Home() {
             <div className="no-results-card animate-scale-up" style={{ border: '1px solid var(--color-border)' }}>
               <h3>Eser Bulunamadı</h3>
               <p>Arama veya duvar filtrenizi sıfırlayarak arşivi tekrar listeleyebilirsiniz.</p>
-              <button 
+              <button
                 className="reset-filters-btn"
                 onClick={() => {
                   setSearchQuery('');
@@ -159,22 +156,21 @@ export default function Home() {
         </section>
       </main>
 
-      {/* Boutique Footer */}
+      {/* Footer */}
       <footer className="gallery-footer">
         <h4 className="footer-logo-title">ALAN ART & COFFEE</h4>
         <p className="footer-copy">Dijital Kürasyon Kataloğu • Bodrum 2026</p>
       </footer>
 
-      {/* Boutique Bottom Detail Overlay Sheet */}
+      {/* Detail Sheet */}
       {selectedArtwork && (
-        <ArtworkDetail 
+        <ArtworkDetail
           artwork={selectedArtwork}
           onClose={() => setSelectedArtwork(null)}
           onSelectArtwork={(art) => setSelectedArtwork(art)}
           allArtworks={artworks}
         />
       )}
-
 
     </div>
   );

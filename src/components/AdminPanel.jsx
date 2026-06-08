@@ -101,9 +101,9 @@ export default function AdminPanel({ isOpen, onClose, onRefresh }) {
               <div className="step-num">1</div>
               <div className="step-text">
                 <strong>Kolon Başlıklarını Belirleyin:</strong>
-                <p>Sheets tablonuzun ilk satırına şu 14 başlığı ekleyin:</p>
+                <p>Sheets tablonuzun ilk satırına şu 16 başlığı ekleyin:</p>
                 <div className="code-badge-container">
-                  <code>id</code><code>artwork_code</code><code>artwork_name</code><code>cafe_location</code><code>artist</code><code>artwork_type</code><code>dimensions</code><code>material</code><code>description</code><code>price_tl</code><code>price_eur</code><code>image_url</code><code>status</code><code>category</code>
+                  <code>id</code><code>artwork_code</code><code>artwork_name</code><code>cafe_location</code><code>artist</code><code>artwork_type</code><code>dimensions</code><code>material</code><code>description</code><code>price_tl</code><code>price_eur</code><code>image_url_1</code><code>image_url_2</code><code>image_url_3</code><code>status</code><code>category</code>
                 </div>
               </div>
             </div>
