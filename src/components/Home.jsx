@@ -39,7 +39,7 @@ export default function Home() {
       (art.material && art.material.toLowerCase().includes(query)) ||
       (art.cafe_location && art.cafe_location.toLowerCase().includes(query));
     
-    const matchesSearch = query ? (matchesNumericId || matchesText) : true;
+    const matchesSearch = query ? (isNumericSearch ? matchesNumericId : matchesText) : true;
     const matchesLocation = selectedLocation === 'All' || art.cafe_location === selectedLocation;
 
     return matchesSearch && matchesLocation;

@@ -190,13 +190,25 @@
 
     .card-invite {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       font-weight: 400;
       font-style: italic;
       color: var(--dark);
       text-align: center;
-      line-height: 1.5;
-      margin-bottom: 12px;
+      line-height: 1.4;
+      white-space: nowrap;
+      margin-bottom: 6px;
+    }
+
+    .card-invite-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--dark);
+      text-align: center;
+      white-space: nowrap;
+      margin-bottom: 14px;
     }
 
     .card-hint {
@@ -205,16 +217,6 @@
       letter-spacing: 0.06em;
       font-weight: 300;
       text-align: center;
-    }
-
-    .card-url-small {
-      margin-top: 20px;
-      font-size: 0.6rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-      word-break: break-all;
-      text-align: center;
-      opacity: 0.7;
     }
 
     /* ── Print Styles ── */
@@ -273,10 +275,9 @@
 
       <div class="card-divider"></div>
 
-      <p class="card-invite">Eserleri dijital arşivden<br>keşfetmek için tarayın</p>
+      <p class="card-invite">Eserleri dijital arşivden keşfetmek için tarayın</p>
+      <p class="card-invite-en">Scan to explore our art collection</p>
       <p class="card-hint">Kameranızı QR koda doğrultun</p>
-
-      <p class="card-url-small" id="urlDisplay"></p>
     </div>
   </div>
 
@@ -307,7 +308,7 @@
         correctLevel: QRCode.CorrectLevel.H
       });
 
-      document.getElementById('urlDisplay').textContent = url;
+
       document.getElementById('cardWrapper').classList.add('visible');
     }
 
