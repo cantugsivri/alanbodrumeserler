@@ -79,7 +79,7 @@ export default function Home() {
             </svg>
             <input
               type="text"
-              placeholder="Eser Numarası veya İsim Giriniz"
+              placeholder="Eser Numarası Giriniz / Enter Artwork No"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className="minimal-search-input"
