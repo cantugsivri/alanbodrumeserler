@@ -286,3 +286,6 @@ id,photo_num,filename,cloudinary_url,public_id,width,height,bytes
 60,1,60_ANTİK İNSAN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225521/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_1.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_1,3000,4000,2089134
 60,2,60_ANTİK İNSAN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225532/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_2.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_2,3000,4000,1845901
 60,3,60_ANTİK İNSAN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225545/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_3.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_3,3000,4000,1485457
+101,1,101_PIA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782227595/alan-art-coffee/eser_101_PIA_1.jpg,alan-art-coffee/eser_101_PIA_1,3000,4000,1790435
+101,2,101_PIA_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782227609/alan-art-coffee/eser_101_PIA_2.jpg,alan-art-coffee/eser_101_PIA_2,3000,4000,2020566
+101,3,101_PIA_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782227619/alan-art-coffee/eser_101_PIA_3.jpg,alan-art-coffee/eser_101_PIA_3,3000,4000,1356232
