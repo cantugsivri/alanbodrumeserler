@@ -1,8 +1,288 @@
-id,filename,cloudinary_url,public_id,width,height,bytes
-1,1.aşil.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915770/alan-art-coffee/eser_1_a%C5%9Fil.jpg,alan-art-coffee/eser_1_aşil,1600,1200,233743
-2,2.antik_kadın_figürü.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915771/alan-art-coffee/eser_2_antik_kad%C4%B1n_fig%C3%BCr%C3%BC.jpg,alan-art-coffee/eser_2_antik_kadın_figürü,1200,1600,191069
-3,3.nike1.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915772/alan-art-coffee/eser_3_nike1.jpg,alan-art-coffee/eser_3_nike1,1200,1600,240426
-,IMG-2485.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780922671/alan-art-coffee/eser_IMG-2485.jpg,alan-art-coffee/eser_IMG-2485,3024,4032,1384925
-36,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926650/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_1.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_1,3024,4032,1058144
-36,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926661/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_2.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_2,3024,4032,1473927
-36,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926672/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_3.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_3,3024,4032,1384925
+id,photo_num,filename,cloudinary_url,public_id,width,height,bytes
+1,,1.aşil.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915770/alan-art-coffee/eser_1_a%C5%9Fil.jpg,alan-art-coffee/eser_1_aşil,1600,1200,233743
+2,,2.antik_kadın_figürü.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915771/alan-art-coffee/eser_2_antik_kad%C4%B1n_fig%C3%BCr%C3%BC.jpg,alan-art-coffee/eser_2_antik_kadın_figürü,1200,1600,191069
+3,,3.nike1.jpeg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780915772/alan-art-coffee/eser_3_nike1.jpg,alan-art-coffee/eser_3_nike1,1200,1600,240426
+,,IMG-2485.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780922671/alan-art-coffee/eser_IMG-2485.jpg,alan-art-coffee/eser_IMG-2485,3024,4032,1384925
+36,,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926650/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_1.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_1,3024,4032,1058144
+36,,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926661/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_2.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_2,3024,4032,1473927
+36,,36.HAYAT AĞACI KOLEKTİF ÇALIŞMA_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926672/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_3.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_3,3024,4032,1384925
+100,1,100_RENKLİ YUVARLAK BALIK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217580/alan-art-coffee/eser_100_RENKL%C4%B0_YUVARLAK_BALIK_1.jpg,alan-art-coffee/eser_100_RENKLİ_YUVARLAK_BALIK_1,3000,4000,1786364
+100,2,100_RENKLİ YUVARLAK BALIK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217591/alan-art-coffee/eser_100_RENKL%C4%B0_YUVARLAK_BALIK_2.jpg,alan-art-coffee/eser_100_RENKLİ_YUVARLAK_BALIK_2,3000,4000,1877298
+100,3,100_RENKLİ YUVARLAK BALIK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217600/alan-art-coffee/eser_100_RENKL%C4%B0_YUVARLAK_BALIK_3.jpg,alan-art-coffee/eser_100_RENKLİ_YUVARLAK_BALIK_3,3000,4000,1389572
+10,1,10_YE-İÇ-EĞLEN1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217610/alan-art-coffee/eser_10_YE-%C4%B0%C3%87-E%C4%9ELEN1_1.jpg,alan-art-coffee/eser_10_YE-İÇ-EĞLEN1_1,3000,4000,2172691
+10,2,10_YE-İÇ-EĞLEN1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217621/alan-art-coffee/eser_10_YE-%C4%B0%C3%87-E%C4%9ELEN1_2.jpg,alan-art-coffee/eser_10_YE-İÇ-EĞLEN1_2,3000,4000,2002736
+10,3,10_YE-İÇ-EĞLEN1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217630/alan-art-coffee/eser_10_YE-%C4%B0%C3%87-E%C4%9ELEN1_3.jpg,alan-art-coffee/eser_10_YE-İÇ-EĞLEN1_3,3000,4000,1452253
+11,1,11_THALEİA (THALİA)_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217640/alan-art-coffee/eser_11_THALE%C4%B0A__THAL%C4%B0A__1.jpg,alan-art-coffee/eser_11_THALEİA__THALİA__1,3000,4000,2076474
+11,2,11_THALEİA (THALİA)_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217651/alan-art-coffee/eser_11_THALE%C4%B0A__THAL%C4%B0A__2.jpg,alan-art-coffee/eser_11_THALEİA__THALİA__2,3000,4000,2063933
+11,3,11_THALEİA (THALİA)_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217660/alan-art-coffee/eser_11_THALE%C4%B0A__THAL%C4%B0A__3.jpg,alan-art-coffee/eser_11_THALEİA__THALİA__3,3000,4000,1499079
+12,1,12_ÇİNGENE KIZ 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217671/alan-art-coffee/eser_12_%C3%87%C4%B0NGENE_KIZ_1_1.jpg,alan-art-coffee/eser_12_ÇİNGENE_KIZ_1_1,3000,4000,2150708
+12,2,12_ÇİNGENE KIZ 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217682/alan-art-coffee/eser_12_%C3%87%C4%B0NGENE_KIZ_1_2.jpg,alan-art-coffee/eser_12_ÇİNGENE_KIZ_1_2,3000,4000,2066056
+12,3,12_ÇİNGENE KIZ 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217691/alan-art-coffee/eser_12_%C3%87%C4%B0NGENE_KIZ_1_3.jpg,alan-art-coffee/eser_12_ÇİNGENE_KIZ_1_3,3000,4000,1535385
+13,1,13_ÇİNGENE KIZ 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217701/alan-art-coffee/eser_13_%C3%87%C4%B0NGENE_KIZ_2_1.jpg,alan-art-coffee/eser_13_ÇİNGENE_KIZ_2_1,3000,4000,1757948
+13,2,13_ÇİNGENE KIZ 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217710/alan-art-coffee/eser_13_%C3%87%C4%B0NGENE_KIZ_2_2.jpg,alan-art-coffee/eser_13_ÇİNGENE_KIZ_2_2,3000,4000,1735144
+13,3,13_ÇİNGENE KIZ 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217720/alan-art-coffee/eser_13_%C3%87%C4%B0NGENE_KIZ_2_3.jpg,alan-art-coffee/eser_13_ÇİNGENE_KIZ_2_3,3000,4000,1520835
+14,1,14_ÖLÜM MOZAİĞİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217731/alan-art-coffee/eser_14_%C3%96L%C3%9CM_MOZA%C4%B0%C4%9E%C4%B0_1.jpg,alan-art-coffee/eser_14_ÖLÜM_MOZAİĞİ_1,3000,4000,2345518
+14,2,14_ÖLÜM MOZAİĞİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217743/alan-art-coffee/eser_14_%C3%96L%C3%9CM_MOZA%C4%B0%C4%9E%C4%B0_2.jpg,alan-art-coffee/eser_14_ÖLÜM_MOZAİĞİ_2,3000,4000,2372334
+14,3,14_ÖLÜM MOZAİĞİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217753/alan-art-coffee/eser_14_%C3%96L%C3%9CM_MOZA%C4%B0%C4%9E%C4%B0_3.jpg,alan-art-coffee/eser_14_ÖLÜM_MOZAİĞİ_3,3000,4000,1667393
+15,1,15_HAYAT AĞACI 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217765/alan-art-coffee/eser_15_HAYAT_A%C4%9EACI_1_1.jpg,alan-art-coffee/eser_15_HAYAT_AĞACI_1_1,3000,4000,2264055
+15,2,15_HAYAT AĞACI 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217776/alan-art-coffee/eser_15_HAYAT_A%C4%9EACI_1_2.jpg,alan-art-coffee/eser_15_HAYAT_AĞACI_1_2,3000,4000,2204403
+15,3,15_HAYAT AĞACI 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217786/alan-art-coffee/eser_15_HAYAT_A%C4%9EACI_1_3.jpg,alan-art-coffee/eser_15_HAYAT_AĞACI_1_3,3000,4000,1654939
+16,1,16_HAYAT AĞACI 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217797/alan-art-coffee/eser_16_HAYAT_A%C4%9EACI_2_1.jpg,alan-art-coffee/eser_16_HAYAT_AĞACI_2_1,3000,4000,2220549
+16,2,16_HAYAT AĞACI 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217808/alan-art-coffee/eser_16_HAYAT_A%C4%9EACI_2_2.jpg,alan-art-coffee/eser_16_HAYAT_AĞACI_2_2,3000,4000,2174131
+16,3,16_HAYAT AĞACI 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217817/alan-art-coffee/eser_16_HAYAT_A%C4%9EACI_2_3.jpg,alan-art-coffee/eser_16_HAYAT_AĞACI_2_3,3000,4000,1625886
+17,1,17_HAYAT AĞACI 3_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217829/alan-art-coffee/eser_17_HAYAT_A%C4%9EACI_3_1.jpg,alan-art-coffee/eser_17_HAYAT_AĞACI_3_1,3000,4000,2166624
+17,2,17_HAYAT AĞACI 3_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217839/alan-art-coffee/eser_17_HAYAT_A%C4%9EACI_3_2.jpg,alan-art-coffee/eser_17_HAYAT_AĞACI_3_2,3000,4000,2079341
+17,3,17_HAYAT AĞACI 3_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217849/alan-art-coffee/eser_17_HAYAT_A%C4%9EACI_3_3.jpg,alan-art-coffee/eser_17_HAYAT_AĞACI_3_3,3000,4000,1569807
+18,1,18_OKEANOS DENİZ TANRISI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217860/alan-art-coffee/eser_18_OKEANOS_DEN%C4%B0Z_TANRISI_1.jpg,alan-art-coffee/eser_18_OKEANOS_DENİZ_TANRISI_1,3000,4000,2112427
+18,2,18_OKEANOS DENİZ TANRISI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217869/alan-art-coffee/eser_18_OKEANOS_DEN%C4%B0Z_TANRISI_2.jpg,alan-art-coffee/eser_18_OKEANOS_DENİZ_TANRISI_2,3000,4000,1493585
+18,3,18_OKEANOS DENİZ TANRISI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217878/alan-art-coffee/eser_18_OKEANOS_DEN%C4%B0Z_TANRISI_3.jpg,alan-art-coffee/eser_18_OKEANOS_DENİZ_TANRISI_3,3000,4000,1607336
+19,1,19_OKEANOS VE TETHYS_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217884/alan-art-coffee/eser_19_OKEANOS_VE_TETHYS_1.jpg,alan-art-coffee/eser_19_OKEANOS_VE_TETHYS_1,2878,2201,955350
+19,2,19_OKEANOS VE TETHYS_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217895/alan-art-coffee/eser_19_OKEANOS_VE_TETHYS_2.jpg,alan-art-coffee/eser_19_OKEANOS_VE_TETHYS_2,3000,4000,1752580
+1,1,1_AKHILLEUS (AŞİL)_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217906/alan-art-coffee/eser_1_AKHILLEUS__A%C5%9E%C4%B0L__1.jpg,alan-art-coffee/eser_1_AKHILLEUS__AŞİL__1,3000,4000,1664109
+1,2,1_AKHILLEUS (AŞİL)_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217915/alan-art-coffee/eser_1_AKHILLEUS__A%C5%9E%C4%B0L__2.jpg,alan-art-coffee/eser_1_AKHILLEUS__AŞİL__2,3000,4000,1708462
+1,3,1_AKHILLEUS (AŞİL)_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217923/alan-art-coffee/eser_1_AKHILLEUS__A%C5%9E%C4%B0L__3.jpg,alan-art-coffee/eser_1_AKHILLEUS__AŞİL__3,3000,4000,1216268
+20260616,1,20260616_171858.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217934/alan-art-coffee/eser_20260616_171858.jpg,alan-art-coffee/eser_20260616_171858,3000,4000,2268145
+20260616,1,20260616_171912.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217945/alan-art-coffee/eser_20260616_171912.jpg,alan-art-coffee/eser_20260616_171912,3000,4000,2223972
+20260616,1,20260616_171918.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217955/alan-art-coffee/eser_20260616_171918.jpg,alan-art-coffee/eser_20260616_171918,3000,4000,1737638
+20260616,1,20260616_172420.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217966/alan-art-coffee/eser_20260616_172420.jpg,alan-art-coffee/eser_20260616_172420,3000,4000,2153890
+20260616,1,20260616_172428.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217976/alan-art-coffee/eser_20260616_172428.jpg,alan-art-coffee/eser_20260616_172428,3000,4000,1887492
+20260616,1,20260616_172436.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217986/alan-art-coffee/eser_20260616_172436.jpg,alan-art-coffee/eser_20260616_172436,3000,4000,1666204
+20260616,1,20260616_172544.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782217997/alan-art-coffee/eser_20260616_172544.jpg,alan-art-coffee/eser_20260616_172544,3000,4000,2085139
+20260616,1,20260616_172552.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218008/alan-art-coffee/eser_20260616_172552.jpg,alan-art-coffee/eser_20260616_172552,3000,4000,2231955
+20260616,1,20260616_172600.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218019/alan-art-coffee/eser_20260616_172600.jpg,alan-art-coffee/eser_20260616_172600,3000,4000,1937755
+20260619,1,20260619_133506.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218029/alan-art-coffee/eser_20260619_133506.jpg,alan-art-coffee/eser_20260619_133506,3000,4000,1790435
+20260619,1,20260619_133515.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218039/alan-art-coffee/eser_20260619_133515.jpg,alan-art-coffee/eser_20260619_133515,3000,4000,2020566
+20260619,1,20260619_133520.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218048/alan-art-coffee/eser_20260619_133520.jpg,alan-art-coffee/eser_20260619_133520,3000,4000,1356232
+20,1,20_ANTİK SAVAŞÇI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218060/alan-art-coffee/eser_20_ANT%C4%B0K_SAVA%C5%9E%C3%87I_1.jpg,alan-art-coffee/eser_20_ANTİK_SAVAŞÇI_1,3000,4000,2349423
+20,2,20_ANTİK SAVAŞÇI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218070/alan-art-coffee/eser_20_ANT%C4%B0K_SAVA%C5%9E%C3%87I_2.jpg,alan-art-coffee/eser_20_ANTİK_SAVAŞÇI_2,3000,4000,1837884
+20,3,20_ANTİK SAVAŞÇI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218079/alan-art-coffee/eser_20_ANT%C4%B0K_SAVA%C5%9E%C3%87I_3.jpg,alan-art-coffee/eser_20_ANTİK_SAVAŞÇI_3,3000,4000,1399606
+21,1,21_BÜYÜK ZEYTİN DALI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218090/alan-art-coffee/eser_21_B%C3%9CY%C3%9CK_ZEYT%C4%B0N_DALI_1.jpg,alan-art-coffee/eser_21_BÜYÜK_ZEYTİN_DALI_1,3000,4000,2178088
+21,2,21_BÜYÜK ZEYTİN DALI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218101/alan-art-coffee/eser_21_B%C3%9CY%C3%9CK_ZEYT%C4%B0N_DALI_2.jpg,alan-art-coffee/eser_21_BÜYÜK_ZEYTİN_DALI_2,3000,4000,1975119
+21,3,21_BÜYÜK ZEYTİN DALI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218111/alan-art-coffee/eser_21_B%C3%9CY%C3%9CK_ZEYT%C4%B0N_DALI_3.jpg,alan-art-coffee/eser_21_BÜYÜK_ZEYTİN_DALI_3,3000,4000,1345552
+22,1,22_MERYEM VE OĞLU İSA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218122/alan-art-coffee/eser_22_MERYEM_VE_O%C4%9ELU_%C4%B0SA_1.jpg,alan-art-coffee/eser_22_MERYEM_VE_OĞLU_İSA_1,3000,4000,2297273
+22,2,22_MERYEM VE OĞLU İSA_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218132/alan-art-coffee/eser_22_MERYEM_VE_O%C4%9ELU_%C4%B0SA_2.jpg,alan-art-coffee/eser_22_MERYEM_VE_OĞLU_İSA_2,3000,4000,2024723
+23,1,23_İSA SON NEFES_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218144/alan-art-coffee/eser_23_%C4%B0SA_SON_NEFES_1.jpg,alan-art-coffee/eser_23_İSA_SON_NEFES_1,3000,4000,2481164
+23,2,23_İSA SON NEFES_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218156/alan-art-coffee/eser_23_%C4%B0SA_SON_NEFES_2.jpg,alan-art-coffee/eser_23_İSA_SON_NEFES_2,3000,4000,2326432
+23,3,23_İSA SON NEFES_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218166/alan-art-coffee/eser_23_%C4%B0SA_SON_NEFES_3.jpg,alan-art-coffee/eser_23_İSA_SON_NEFES_3,3000,4000,1628427
+24,1,24_ZEYTİN DALI 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218176/alan-art-coffee/eser_24_ZEYT%C4%B0N_DALI_1_1.jpg,alan-art-coffee/eser_24_ZEYTİN_DALI_1_1,3000,4000,2046090
+24,2,24_ZEYTİN DALI 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218185/alan-art-coffee/eser_24_ZEYT%C4%B0N_DALI_1_2.jpg,alan-art-coffee/eser_24_ZEYTİN_DALI_1_2,3000,4000,1665506
+49,1,49_ASLAN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218213/alan-art-coffee/eser_49_ASLAN_1.jpg,alan-art-coffee/eser_49_ASLAN_1,3000,4000,2150219
+49,2,49_ASLAN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218226/alan-art-coffee/eser_49_ASLAN_2.jpg,alan-art-coffee/eser_49_ASLAN_2,3000,4000,2123328
+49,3,49_ASLAN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218236/alan-art-coffee/eser_49_ASLAN_3.jpg,alan-art-coffee/eser_49_ASLAN_3,3000,4000,1394282
+50,1,50_TİLKİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218260/alan-art-coffee/eser_50_T%C4%B0LK%C4%B0_1.jpg,alan-art-coffee/eser_50_TİLKİ_1,3000,4000,2171365
+50,3,50_TİLKİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218417/alan-art-coffee/eser_50_T%C4%B0LK%C4%B0_3.jpg,alan-art-coffee/eser_50_TİLKİ_3,3000,4000,1452606
+53,1,53_BAYKUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218426/alan-art-coffee/eser_53_BAYKU%C5%9E_1.jpg,alan-art-coffee/eser_53_BAYKUŞ_1,3000,4000,1571493
+53,2,53_BAYKUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218436/alan-art-coffee/eser_53_BAYKU%C5%9E_2.jpg,alan-art-coffee/eser_53_BAYKUŞ_2,3000,4000,1593932
+53,3,53_BAYKUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218446/alan-art-coffee/eser_53_BAYKU%C5%9E_3.jpg,alan-art-coffee/eser_53_BAYKUŞ_3,3000,4000,1301101
+55,1,55_KADIN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218457/alan-art-coffee/eser_55_KADIN_1.jpg,alan-art-coffee/eser_55_KADIN_1,3000,4000,2081401
+55,2,55_KADIN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218468/alan-art-coffee/eser_55_KADIN_2.jpg,alan-art-coffee/eser_55_KADIN_2,3000,4000,2082561
+55,3,55_KADIN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218478/alan-art-coffee/eser_55_KADIN_3.jpg,alan-art-coffee/eser_55_KADIN_3,3000,4000,1501156
+56,1,56_ÇİÇEKLİ VAZO_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218491/alan-art-coffee/eser_56_%C3%87%C4%B0%C3%87EKL%C4%B0_VAZO_1.jpg,alan-art-coffee/eser_56_ÇİÇEKLİ_VAZO_1,3000,4000,2404553
+56,2,56_ÇİÇEKLİ VAZO_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218504/alan-art-coffee/eser_56_%C3%87%C4%B0%C3%87EKL%C4%B0_VAZO_2.jpg,alan-art-coffee/eser_56_ÇİÇEKLİ_VAZO_2,3000,4000,2467150
+56,3,56_ÇİÇEKLİ VAZO_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218514/alan-art-coffee/eser_56_%C3%87%C4%B0%C3%87EKL%C4%B0_VAZO_3.jpg,alan-art-coffee/eser_56_ÇİÇEKLİ_VAZO_3,3000,4000,1514876
+57,1,57_ÇOCUK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218525/alan-art-coffee/eser_57_%C3%87OCUK_1.jpg,alan-art-coffee/eser_57_ÇOCUK_1,3000,4000,2194269
+57,2,57_ÇOCUK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218537/alan-art-coffee/eser_57_%C3%87OCUK_2.jpg,alan-art-coffee/eser_57_ÇOCUK_2,3000,4000,2145033
+57,3,57_ÇOCUK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218547/alan-art-coffee/eser_57_%C3%87OCUK_3.jpg,alan-art-coffee/eser_57_ÇOCUK_3,3000,4000,1378240
+58,1,58_KEDİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218559/alan-art-coffee/eser_58_KED%C4%B0_1.jpg,alan-art-coffee/eser_58_KEDİ_1,3000,4000,2324150
+58,2,58_KEDİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218570/alan-art-coffee/eser_58_KED%C4%B0_2.jpg,alan-art-coffee/eser_58_KEDİ_2,3000,4000,2129889
+58,3,58_KEDİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218581/alan-art-coffee/eser_58_KED%C4%B0_3.jpg,alan-art-coffee/eser_58_KEDİ_3,3000,4000,1671432
+59,1,59_DENİZ ve KADIN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218595/alan-art-coffee/eser_59_DEN%C4%B0Z_ve_KADIN_1.jpg,alan-art-coffee/eser_59_DENİZ_ve_KADIN_1,3000,4000,2309684
+59,2,59_DENİZ ve KADIN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218609/alan-art-coffee/eser_59_DEN%C4%B0Z_ve_KADIN_2.jpg,alan-art-coffee/eser_59_DENİZ_ve_KADIN_2,3000,4000,2138334
+59,3,59_DENİZ ve KADIN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218620/alan-art-coffee/eser_59_DEN%C4%B0Z_ve_KADIN_3.jpg,alan-art-coffee/eser_59_DENİZ_ve_KADIN_3,3000,4000,1644737
+5,1,5_NİKE 3_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218629/alan-art-coffee/eser_5_N%C4%B0KE_3_1.jpg,alan-art-coffee/eser_5_NİKE_3_1,3000,4000,1637495
+5,2,5_NİKE 3_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218642/alan-art-coffee/eser_5_N%C4%B0KE_3_2.jpg,alan-art-coffee/eser_5_NİKE_3_2,3000,4000,2013905
+5,3,5_NİKE 3_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218674/alan-art-coffee/eser_5_N%C4%B0KE_3_3.jpg,alan-art-coffee/eser_5_NİKE_3_3,3000,4000,1548474
+61,1,61_RENKLİ BALIKLAR_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218804/alan-art-coffee/eser_61_RENKL%C4%B0_BALIKLAR_1.jpg,alan-art-coffee/eser_61_RENKLİ_BALIKLAR_1,3000,4000,2172509
+61,2,61_RENKLİ BALIKLAR_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218816/alan-art-coffee/eser_61_RENKL%C4%B0_BALIKLAR_2.jpg,alan-art-coffee/eser_61_RENKLİ_BALIKLAR_2,3000,4000,1367323
+61,3,61_RENKLİ BALIKLAR_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218826/alan-art-coffee/eser_61_RENKL%C4%B0_BALIKLAR_3.jpg,alan-art-coffee/eser_61_RENKLİ_BALIKLAR_3,3000,4000,1343538
+62,1,62_KEDİ ve KÖPEK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218838/alan-art-coffee/eser_62_KED%C4%B0_ve_K%C3%96PEK_1.jpg,alan-art-coffee/eser_62_KEDİ_ve_KÖPEK_1,3000,4000,2152012
+62,2,62_KEDİ ve KÖPEK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218852/alan-art-coffee/eser_62_KED%C4%B0_ve_K%C3%96PEK_2.jpg,alan-art-coffee/eser_62_KEDİ_ve_KÖPEK_2,3000,4000,1896485
+62,3,62_KEDİ ve KÖPEK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218861/alan-art-coffee/eser_62_KED%C4%B0_ve_K%C3%96PEK_3.jpg,alan-art-coffee/eser_62_KEDİ_ve_KÖPEK_3,3000,4000,1293095
+63,1,63_DALDAKİ KUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218873/alan-art-coffee/eser_63_DALDAK%C4%B0_KU%C5%9E_1.jpg,alan-art-coffee/eser_63_DALDAKİ_KUŞ_1,3000,4000,1979607
+63,2,63_DALDAKİ KUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218884/alan-art-coffee/eser_63_DALDAK%C4%B0_KU%C5%9E_2.jpg,alan-art-coffee/eser_63_DALDAKİ_KUŞ_2,3000,4000,1644604
+63,3,63_DALDAKİ KUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218893/alan-art-coffee/eser_63_DALDAK%C4%B0_KU%C5%9E_3.jpg,alan-art-coffee/eser_63_DALDAKİ_KUŞ_3,3000,4000,1181925
+64,1,64_UÇAN KUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218904/alan-art-coffee/eser_64_U%C3%87AN_KU%C5%9E_1.jpg,alan-art-coffee/eser_64_UÇAN_KUŞ_1,3000,4000,2012731
+64,2,64_UÇAN KUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218914/alan-art-coffee/eser_64_U%C3%87AN_KU%C5%9E_2.jpg,alan-art-coffee/eser_64_UÇAN_KUŞ_2,3000,4000,1683133
+64,3,64_UÇAN KUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218923/alan-art-coffee/eser_64_U%C3%87AN_KU%C5%9E_3.jpg,alan-art-coffee/eser_64_UÇAN_KUŞ_3,3000,4000,1182748
+65,1,65_AMFITRITI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218935/alan-art-coffee/eser_65_AMFITRITI_1.jpg,alan-art-coffee/eser_65_AMFITRITI_1,3000,4000,2127207
+65,2,65_AMFITRITI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218943/alan-art-coffee/eser_65_AMFITRITI_2.jpg,alan-art-coffee/eser_65_AMFITRITI_2,3000,4000,1494040
+66,1,66_CAN YÜCEL KARİKATÜR_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218956/alan-art-coffee/eser_66_CAN_Y%C3%9CCEL_KAR%C4%B0KAT%C3%9CR_1.jpg,alan-art-coffee/eser_66_CAN_YÜCEL_KARİKATÜR_1,3000,4000,2232520
+66,2,66_CAN YÜCEL KARİKATÜR_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218967/alan-art-coffee/eser_66_CAN_Y%C3%9CCEL_KAR%C4%B0KAT%C3%9CR_2.jpg,alan-art-coffee/eser_66_CAN_YÜCEL_KARİKATÜR_2,3000,4000,1981554
+66,3,66_CAN YÜCEL KARİKATÜR_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218976/alan-art-coffee/eser_66_CAN_Y%C3%9CCEL_KAR%C4%B0KAT%C3%9CR_3.jpg,alan-art-coffee/eser_66_CAN_YÜCEL_KARİKATÜR_3,3000,4000,1385968
+67,1,67_CHE SİLÜETİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218988/alan-art-coffee/eser_67_CHE_S%C4%B0L%C3%9CET%C4%B0_1.jpg,alan-art-coffee/eser_67_CHE_SİLÜETİ_1,3000,4000,1871935
+67,2,67_CHE SİLÜETİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782218997/alan-art-coffee/eser_67_CHE_S%C4%B0L%C3%9CET%C4%B0_2.jpg,alan-art-coffee/eser_67_CHE_SİLÜETİ_2,3000,4000,1561339
+67,3,67_CHE SİLÜETİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219007/alan-art-coffee/eser_67_CHE_S%C4%B0L%C3%9CET%C4%B0_3.jpg,alan-art-coffee/eser_67_CHE_SİLÜETİ_3,3000,4000,1211659
+68,1,68_NÜ KADIN 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219018/alan-art-coffee/eser_68_N%C3%9C_KADIN_1_1.jpg,alan-art-coffee/eser_68_NÜ_KADIN_1_1,3000,4000,1768597
+68,2,68_NÜ KADIN 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219029/alan-art-coffee/eser_68_N%C3%9C_KADIN_1_2.jpg,alan-art-coffee/eser_68_NÜ_KADIN_1_2,3000,4000,1806514
+68,3,68_NÜ KADIN 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219039/alan-art-coffee/eser_68_N%C3%9C_KADIN_1_3.jpg,alan-art-coffee/eser_68_NÜ_KADIN_1_3,3000,4000,1439560
+69,1,69_BAYKUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219051/alan-art-coffee/eser_69_BAYKU%C5%9E_1.jpg,alan-art-coffee/eser_69_BAYKUŞ_1,3000,4000,2098229
+69,2,69_BAYKUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219062/alan-art-coffee/eser_69_BAYKU%C5%9E_2.jpg,alan-art-coffee/eser_69_BAYKUŞ_2,3000,4000,1970984
+69,3,69_BAYKUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219072/alan-art-coffee/eser_69_BAYKU%C5%9E_3.jpg,alan-art-coffee/eser_69_BAYKUŞ_3,3000,4000,1712839
+6,1,6_MOZAİK ÜZÜM_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219084/alan-art-coffee/eser_6_MOZA%C4%B0K_%C3%9CZ%C3%9CM_1.jpg,alan-art-coffee/eser_6_MOZAİK_ÜZÜM_1,3000,4000,2190605
+6,2,6_MOZAİK ÜZÜM_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219094/alan-art-coffee/eser_6_MOZA%C4%B0K_%C3%9CZ%C3%9CM_2.jpg,alan-art-coffee/eser_6_MOZAİK_ÜZÜM_2,3000,4000,1802221
+6,3,6_MOZAİK ÜZÜM_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219103/alan-art-coffee/eser_6_MOZA%C4%B0K_%C3%9CZ%C3%9CM_3.jpg,alan-art-coffee/eser_6_MOZAİK_ÜZÜM_3,3000,4000,1416500
+70,1,70_FİLAMİNGO_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219115/alan-art-coffee/eser_70_F%C4%B0LAM%C4%B0NGO_1.jpg,alan-art-coffee/eser_70_FİLAMİNGO_1,3000,4000,2019215
+70,2,70_FİLAMİNGO_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219125/alan-art-coffee/eser_70_F%C4%B0LAM%C4%B0NGO_2.jpg,alan-art-coffee/eser_70_FİLAMİNGO_2,3000,4000,1567588
+70,3,70_FİLAMİNGO_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219135/alan-art-coffee/eser_70_F%C4%B0LAM%C4%B0NGO_3.jpg,alan-art-coffee/eser_70_FİLAMİNGO_3,3000,4000,1282253
+71,1,71_KEDİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219145/alan-art-coffee/eser_71_KED%C4%B0_1.jpg,alan-art-coffee/eser_71_KEDİ_1,3000,4000,1812856
+71,2,71_KEDİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219155/alan-art-coffee/eser_71_KED%C4%B0_2.jpg,alan-art-coffee/eser_71_KEDİ_2,3000,4000,1671321
+71,3,71_KEDİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219165/alan-art-coffee/eser_71_KED%C4%B0_3.jpg,alan-art-coffee/eser_71_KEDİ_3,3000,4000,1296146
+72,1,72_KUBİST AKIMININA UYGUN KADIN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219177/alan-art-coffee/eser_72_KUB%C4%B0ST_AKIMININA_UYGUN_KADIN_1.jpg,alan-art-coffee/eser_72_KUBİST_AKIMININA_UYGUN_KADIN_1,3000,4000,1972710
+72,2,72_KUBİST AKIMININA UYGUN KADIN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219188/alan-art-coffee/eser_72_KUB%C4%B0ST_AKIMININA_UYGUN_KADIN_2.jpg,alan-art-coffee/eser_72_KUBİST_AKIMININA_UYGUN_KADIN_2,3000,4000,1814621
+72,3,72_KUBİST AKIMININA UYGUN KADIN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219197/alan-art-coffee/eser_72_KUB%C4%B0ST_AKIMININA_UYGUN_KADIN_3.jpg,alan-art-coffee/eser_72_KUBİST_AKIMININA_UYGUN_KADIN_3,3000,4000,1440586
+73,1,73_KARA KEDİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219209/alan-art-coffee/eser_73_KARA_KED%C4%B0_1.jpg,alan-art-coffee/eser_73_KARA_KEDİ_1,3000,4000,1996678
+73,2,73_KARA KEDİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219218/alan-art-coffee/eser_73_KARA_KED%C4%B0_2.jpg,alan-art-coffee/eser_73_KARA_KEDİ_2,3000,4000,1347481
+73,3,73_KARA KEDİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219228/alan-art-coffee/eser_73_KARA_KED%C4%B0_3.jpg,alan-art-coffee/eser_73_KARA_KEDİ_3,3000,4000,1099030
+74,1,74_RENKLİ BALIK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219239/alan-art-coffee/eser_74_RENKL%C4%B0_BALIK_1.jpg,alan-art-coffee/eser_74_RENKLİ_BALIK_1,3000,4000,1920083
+74,2,74_RENKLİ BALIK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219251/alan-art-coffee/eser_74_RENKL%C4%B0_BALIK_2.jpg,alan-art-coffee/eser_74_RENKLİ_BALIK_2,3000,4000,1941519
+74,3,74_RENKLİ BALIK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219260/alan-art-coffee/eser_74_RENKL%C4%B0_BALIK_3.jpg,alan-art-coffee/eser_74_RENKLİ_BALIK_3,3000,4000,1381814
+75,1,75_RENKLİ BAYKUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219273/alan-art-coffee/eser_75_RENKL%C4%B0_BAYKU%C5%9E_1.jpg,alan-art-coffee/eser_75_RENKLİ_BAYKUŞ_1,3000,4000,1758044
+75,2,75_RENKLİ BAYKUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219284/alan-art-coffee/eser_75_RENKL%C4%B0_BAYKU%C5%9E_2.jpg,alan-art-coffee/eser_75_RENKLİ_BAYKUŞ_2,3000,4000,1881856
+75,3,75_RENKLİ BAYKUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219295/alan-art-coffee/eser_75_RENKL%C4%B0_BAYKU%C5%9E_3.jpg,alan-art-coffee/eser_75_RENKLİ_BAYKUŞ_3,3000,4000,1204318
+76,1,76_KEDİ ve FARE_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219306/alan-art-coffee/eser_76_KED%C4%B0_ve_FARE_1.jpg,alan-art-coffee/eser_76_KEDİ_ve_FARE_1,3000,4000,1868987
+76,2,76_KEDİ ve FARE_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219318/alan-art-coffee/eser_76_KED%C4%B0_ve_FARE_2.jpg,alan-art-coffee/eser_76_KEDİ_ve_FARE_2,3000,4000,2212287
+76,3,76_KEDİ ve FARE_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219329/alan-art-coffee/eser_76_KED%C4%B0_ve_FARE_3.jpg,alan-art-coffee/eser_76_KEDİ_ve_FARE_3,3000,4000,1546874
+77,1,77_HOROZ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219342/alan-art-coffee/eser_77_HOROZ_1.jpg,alan-art-coffee/eser_77_HOROZ_1,3000,4000,1795002
+77,2,77_HOROZ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219354/alan-art-coffee/eser_77_HOROZ_2.jpg,alan-art-coffee/eser_77_HOROZ_2,3000,4000,1798530
+77,3,77_HOROZ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219365/alan-art-coffee/eser_77_HOROZ_3.jpg,alan-art-coffee/eser_77_HOROZ_3,3000,4000,1316076
+78,1,78_AFRİKALI KADIN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219377/alan-art-coffee/eser_78_AFR%C4%B0KALI_KADIN_1.jpg,alan-art-coffee/eser_78_AFRİKALI_KADIN_1,3000,4000,1980284
+78,2,78_AFRİKALI KADIN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219389/alan-art-coffee/eser_78_AFR%C4%B0KALI_KADIN_2.jpg,alan-art-coffee/eser_78_AFRİKALI_KADIN_2,3000,4000,1894749
+78,3,78_AFRİKALI KADIN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219400/alan-art-coffee/eser_78_AFR%C4%B0KALI_KADIN_3.jpg,alan-art-coffee/eser_78_AFRİKALI_KADIN_3,3000,4000,1397397
+7,1,7_KEM GÖZ MOZAİĞİ 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219412/alan-art-coffee/eser_7_KEM_G%C3%96Z_MOZA%C4%B0%C4%9E%C4%B0_1_1.jpg,alan-art-coffee/eser_7_KEM_GÖZ_MOZAİĞİ_1_1,3000,4000,2176468
+7,2,7_KEM GÖZ MOZAİĞİ 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219425/alan-art-coffee/eser_7_KEM_G%C3%96Z_MOZA%C4%B0%C4%9E%C4%B0_1_2.jpg,alan-art-coffee/eser_7_KEM_GÖZ_MOZAİĞİ_1_2,3000,4000,2126265
+7,3,7_KEM GÖZ MOZAİĞİ 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219436/alan-art-coffee/eser_7_KEM_G%C3%96Z_MOZA%C4%B0%C4%9E%C4%B0_1_3.jpg,alan-art-coffee/eser_7_KEM_GÖZ_MOZAİĞİ_1_3,3000,4000,1445493
+80,1,80_RENKLİ GÖZ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219447/alan-art-coffee/eser_80_RENKL%C4%B0_G%C3%96Z_1.jpg,alan-art-coffee/eser_80_RENKLİ_GÖZ_1,3000,4000,1885976
+80,2,80_RENKLİ GÖZ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219461/alan-art-coffee/eser_80_RENKL%C4%B0_G%C3%96Z_2.jpg,alan-art-coffee/eser_80_RENKLİ_GÖZ_2,3000,4000,2114635
+80,3,80_RENKLİ GÖZ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219471/alan-art-coffee/eser_80_RENKL%C4%B0_G%C3%96Z_3.jpg,alan-art-coffee/eser_80_RENKLİ_GÖZ_3,3000,4000,1616366
+81,1,81_RENKLİ AT_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219482/alan-art-coffee/eser_81_RENKL%C4%B0_AT_1.jpg,alan-art-coffee/eser_81_RENKLİ_AT_1,3000,4000,1768124
+81,2,81_RENKLİ AT_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219493/alan-art-coffee/eser_81_RENKL%C4%B0_AT_2.jpg,alan-art-coffee/eser_81_RENKLİ_AT_2,3000,4000,1697174
+81,3,81_RENKLİ AT_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219503/alan-art-coffee/eser_81_RENKL%C4%B0_AT_3.jpg,alan-art-coffee/eser_81_RENKLİ_AT_3,3000,4000,1465225
+83,1,83_LAVOBO AYNASI.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219514/alan-art-coffee/eser_83_LAVOBO_AYNASI.jpg,alan-art-coffee/eser_83_LAVOBO_AYNASI,3000,4000,1834156
+83,1,83_MAKYAJ AYNASI.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219524/alan-art-coffee/eser_83_MAKYAJ_AYNASI.jpg,alan-art-coffee/eser_83_MAKYAJ_AYNASI,3000,4000,1850474
+84,1,84_MAVİ NÜ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219533/alan-art-coffee/eser_84_MAV%C4%B0_N%C3%9C_1.jpg,alan-art-coffee/eser_84_MAVİ_NÜ_1,3000,4000,1771135
+84,2,84_MAVİ NÜ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219543/alan-art-coffee/eser_84_MAV%C4%B0_N%C3%9C_2.jpg,alan-art-coffee/eser_84_MAVİ_NÜ_2,3000,4000,1570457
+84,3,84_MAVİ NÜ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219553/alan-art-coffee/eser_84_MAV%C4%B0_N%C3%9C_3.jpg,alan-art-coffee/eser_84_MAVİ_NÜ_3,3000,4000,1338808
+85,1,85_KADIN YÜZÜ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219565/alan-art-coffee/eser_85_KADIN_Y%C3%9CZ%C3%9C_1.jpg,alan-art-coffee/eser_85_KADIN_YÜZÜ_1,3000,4000,2037120
+85,2,85_KADIN YÜZÜ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219576/alan-art-coffee/eser_85_KADIN_Y%C3%9CZ%C3%9C_2.jpg,alan-art-coffee/eser_85_KADIN_YÜZÜ_2,3000,4000,1847648
+85,3,85_KADIN YÜZÜ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219586/alan-art-coffee/eser_85_KADIN_Y%C3%9CZ%C3%9C_3.jpg,alan-art-coffee/eser_85_KADIN_YÜZÜ_3,3000,4000,1407352
+86,1,86_SİYAH FON ÜZERİNE KADIN FİGÜRÜ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219597/alan-art-coffee/eser_86_S%C4%B0YAH_FON_%C3%9CZER%C4%B0NE_KADIN_F%C4%B0G%C3%9CR%C3%9C_1.jpg,alan-art-coffee/eser_86_SİYAH_FON_ÜZERİNE_KADIN_FİGÜRÜ_1,3000,4000,1809827
+86,2,86_SİYAH FON ÜZERİNE KADIN FİGÜRÜ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219608/alan-art-coffee/eser_86_S%C4%B0YAH_FON_%C3%9CZER%C4%B0NE_KADIN_F%C4%B0G%C3%9CR%C3%9C_2.jpg,alan-art-coffee/eser_86_SİYAH_FON_ÜZERİNE_KADIN_FİGÜRÜ_2,3000,4000,1918846
+86,3,86_SİYAH FON ÜZERİNE KADIN FİGÜRÜ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219617/alan-art-coffee/eser_86_S%C4%B0YAH_FON_%C3%9CZER%C4%B0NE_KADIN_F%C4%B0G%C3%9CR%C3%9C_3.jpg,alan-art-coffee/eser_86_SİYAH_FON_ÜZERİNE_KADIN_FİGÜRÜ_3,3000,4000,1508216
+87,1,87_DENİZ KABUĞU_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219627/alan-art-coffee/eser_87_DEN%C4%B0Z_KABU%C4%9EU_1.jpg,alan-art-coffee/eser_87_DENİZ_KABUĞU_1,3000,4000,1426085
+87,2,87_DENİZ KABUĞU_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219639/alan-art-coffee/eser_87_DEN%C4%B0Z_KABU%C4%9EU_2.jpg,alan-art-coffee/eser_87_DENİZ_KABUĞU_2,3000,4000,1846507
+87,3,87_DENİZ KABUĞU_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219648/alan-art-coffee/eser_87_DEN%C4%B0Z_KABU%C4%9EU_3.jpg,alan-art-coffee/eser_87_DENİZ_KABUĞU_3,3000,4000,1340340
+88,1,88_KADIN VE GECE BULUŞMASI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219659/alan-art-coffee/eser_88_KADIN_VE_GECE_BULU%C5%9EMASI_1.jpg,alan-art-coffee/eser_88_KADIN_VE_GECE_BULUŞMASI_1,3000,4000,1733421
+88,2,88_KADIN VE GECE BULUŞMASI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219669/alan-art-coffee/eser_88_KADIN_VE_GECE_BULU%C5%9EMASI_2.jpg,alan-art-coffee/eser_88_KADIN_VE_GECE_BULUŞMASI_2,3000,4000,1425831
+88,3,88_KADIN VE GECE BULUŞMASI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219679/alan-art-coffee/eser_88_KADIN_VE_GECE_BULU%C5%9EMASI_3.jpg,alan-art-coffee/eser_88_KADIN_VE_GECE_BULUŞMASI_3,3000,4000,1350701
+90,1,90_VAZO 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219693/alan-art-coffee/eser_90_VAZO_1_1.jpg,alan-art-coffee/eser_90_VAZO_1_1,3000,4000,2227070
+90,2,90_VAZO 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219704/alan-art-coffee/eser_90_VAZO_1_2.jpg,alan-art-coffee/eser_90_VAZO_1_2,3000,4000,1629085
+91,1,91_VAZO 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219717/alan-art-coffee/eser_91_VAZO_2_1.jpg,alan-art-coffee/eser_91_VAZO_2_1,3000,4000,1970344
+91,2,91_VAZO 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219729/alan-art-coffee/eser_91_VAZO_2_2.jpg,alan-art-coffee/eser_91_VAZO_2_2,3000,4000,1360906
+92,1,92_VAZO 3_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219743/alan-art-coffee/eser_92_VAZO_3_1.jpg,alan-art-coffee/eser_92_VAZO_3_1,3000,4000,2253705
+92,2,92_VAZO 3_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219755/alan-art-coffee/eser_92_VAZO_3_2.jpg,alan-art-coffee/eser_92_VAZO_3_2,3000,4000,1503914
+93,1,93_PUSULA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219768/alan-art-coffee/eser_93_PUSULA_1.jpg,alan-art-coffee/eser_93_PUSULA_1,3000,4000,2439753
+93,2,93_PUSULA_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219781/alan-art-coffee/eser_93_PUSULA_2.jpg,alan-art-coffee/eser_93_PUSULA_2,3000,4000,2487417
+93,3,93_PUSULA_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219792/alan-art-coffee/eser_93_PUSULA_3.jpg,alan-art-coffee/eser_93_PUSULA_3,3000,4000,1848637
+95,1,95_KUŞ 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219804/alan-art-coffee/eser_95_KU%C5%9E_1_1.jpg,alan-art-coffee/eser_95_KUŞ_1_1,3000,4000,1753246
+95,2,95_KUŞ 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219815/alan-art-coffee/eser_95_KU%C5%9E_1_2.jpg,alan-art-coffee/eser_95_KUŞ_1_2,3000,4000,1501449
+95,3,95_KUŞ 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219825/alan-art-coffee/eser_95_KU%C5%9E_1_3.jpg,alan-art-coffee/eser_95_KUŞ_1_3,3000,4000,1072841
+96,1,96_KUŞ 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219838/alan-art-coffee/eser_96_KU%C5%9E_2_1.jpg,alan-art-coffee/eser_96_KUŞ_2_1,3000,4000,1982519
+96,2,96_KUŞ 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219850/alan-art-coffee/eser_96_KU%C5%9E_2_2.jpg,alan-art-coffee/eser_96_KUŞ_2_2,3000,4000,1630549
+96,3,96_KUŞ 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219862/alan-art-coffee/eser_96_KU%C5%9E_2_3.jpg,alan-art-coffee/eser_96_KUŞ_2_3,3000,4000,1161320
+97,1,97_AT_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219875/alan-art-coffee/eser_97_AT_1.jpg,alan-art-coffee/eser_97_AT_1,3000,4000,2145387
+97,2,97_AT_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219887/alan-art-coffee/eser_97_AT_2.jpg,alan-art-coffee/eser_97_AT_2,3000,4000,1966927
+97,3,97_AT_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219897/alan-art-coffee/eser_97_AT_3.jpg,alan-art-coffee/eser_97_AT_3,3000,4000,1571530
+98,1,98_NÜ KADIN 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219909/alan-art-coffee/eser_98_N%C3%9C_KADIN_2_1.jpg,alan-art-coffee/eser_98_NÜ_KADIN_2_1,3000,4000,2066362
+98,2,98_NÜ KADIN 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219920/alan-art-coffee/eser_98_N%C3%9C_KADIN_2_2.jpg,alan-art-coffee/eser_98_NÜ_KADIN_2_2,3000,4000,1986694
+98,3,98_NÜ KADIN 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219930/alan-art-coffee/eser_98_N%C3%9C_KADIN_2_3.jpg,alan-art-coffee/eser_98_NÜ_KADIN_2_3,3000,4000,1647007
+99,1,99_YE-İÇ-EĞLEN2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219941/alan-art-coffee/eser_99_YE-%C4%B0%C3%87-E%C4%9ELEN2_1.jpg,alan-art-coffee/eser_99_YE-İÇ-EĞLEN2_1,3000,4000,1847388
+99,2,99_YE-İÇ-EĞLEN2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219953/alan-art-coffee/eser_99_YE-%C4%B0%C3%87-E%C4%9ELEN2_2.jpg,alan-art-coffee/eser_99_YE-İÇ-EĞLEN2_2,3000,4000,1932180
+99,3,99_YE-İÇ-EĞLEN2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219964/alan-art-coffee/eser_99_YE-%C4%B0%C3%87-E%C4%9ELEN2_3.jpg,alan-art-coffee/eser_99_YE-İÇ-EĞLEN2_3,3000,4000,1577077
+9,1,9_POSEİDON MIZRAĞI VE EROS YUNUSU_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219975/alan-art-coffee/eser_9_POSE%C4%B0DON_MIZRA%C4%9EI_VE_EROS_YUNUSU_1.jpg,alan-art-coffee/eser_9_POSEİDON_MIZRAĞI_VE_EROS_YUNUSU_1,3000,4000,2116852
+9,2,9_POSEİDON MIZRAĞI VE EROS YUNUSU_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219987/alan-art-coffee/eser_9_POSE%C4%B0DON_MIZRA%C4%9EI_VE_EROS_YUNUSU_2.jpg,alan-art-coffee/eser_9_POSEİDON_MIZRAĞI_VE_EROS_YUNUSU_2,3000,4000,2125735
+9,3,9_POSEİDON MIZRAĞI VE EROS YUNUSU_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782219997/alan-art-coffee/eser_9_POSE%C4%B0DON_MIZRA%C4%9EI_VE_EROS_YUNUSU_3.jpg,alan-art-coffee/eser_9_POSEİDON_MIZRAĞI_VE_EROS_YUNUSU_3,3000,4000,1500332
+,1,ANTİK1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782220009/alan-art-coffee/eser_ANT%C4%B0K1.jpg,alan-art-coffee/eser_ANTİK1,3000,4000,2089134
+,1,ANTİK2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782220020/alan-art-coffee/eser_ANT%C4%B0K2.jpg,alan-art-coffee/eser_ANTİK2,3000,4000,1845901
+,1,ANTİK3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782220031/alan-art-coffee/eser_ANT%C4%B0K3.jpg,alan-art-coffee/eser_ANTİK3,3000,4000,1485457
+24,3,24_ZEYTİN DALI 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221262/alan-art-coffee/eser_24_ZEYT%C4%B0N_DALI_1_3.jpg,alan-art-coffee/eser_24_ZEYTİN_DALI_1_3,3000,4000,1448973
+25,1,25_ÇİNGENE KIZ 3_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221272/alan-art-coffee/eser_25_%C3%87%C4%B0NGENE_KIZ_3_1.jpg,alan-art-coffee/eser_25_ÇİNGENE_KIZ_3_1,3000,4000,1714691
+25,2,25_ÇİNGENE KIZ 3_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221283/alan-art-coffee/eser_25_%C3%87%C4%B0NGENE_KIZ_3_2.jpg,alan-art-coffee/eser_25_ÇİNGENE_KIZ_3_2,3000,4000,1750904
+25,3,25_ÇİNGENE KIZ 3_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221294/alan-art-coffee/eser_25_%C3%87%C4%B0NGENE_KIZ_3_3.jpg,alan-art-coffee/eser_25_ÇİNGENE_KIZ_3_3,3000,4000,1437345
+26,1,26_MEDUSA 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221304/alan-art-coffee/eser_26_MEDUSA_1_1.jpg,alan-art-coffee/eser_26_MEDUSA_1_1,3000,4000,1767932
+26,2,26_MEDUSA 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221314/alan-art-coffee/eser_26_MEDUSA_1_2.jpg,alan-art-coffee/eser_26_MEDUSA_1_2,3000,4000,1637741
+27,1,27_MEDUSA 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221326/alan-art-coffee/eser_27_MEDUSA_2_1.jpg,alan-art-coffee/eser_27_MEDUSA_2_1,3000,4000,1949364
+27,2,27_MEDUSA 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221336/alan-art-coffee/eser_27_MEDUSA_2_2.jpg,alan-art-coffee/eser_27_MEDUSA_2_2,3000,4000,1888695
+27,3,27_MEDUSA 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221346/alan-art-coffee/eser_27_MEDUSA_2_3.jpg,alan-art-coffee/eser_27_MEDUSA_2_3,3000,4000,1521217
+28,1,28_SARI KUŞ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221364/alan-art-coffee/eser_28_SARI_KU%C5%9E_1.jpg,alan-art-coffee/eser_28_SARI_KUŞ_1,3000,4000,2011267
+28,2,28_SARI KUŞ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221373/alan-art-coffee/eser_28_SARI_KU%C5%9E_2.jpg,alan-art-coffee/eser_28_SARI_KUŞ_2,3000,4000,1470874
+28,3,28_SARI KUŞ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221381/alan-art-coffee/eser_28_SARI_KU%C5%9E_3.jpg,alan-art-coffee/eser_28_SARI_KUŞ_3,3000,4000,1126449
+29,1,29_KARTAL_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221393/alan-art-coffee/eser_29_KARTAL_1.jpg,alan-art-coffee/eser_29_KARTAL_1,3000,4000,2244289
+29,2,29_KARTAL_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221404/alan-art-coffee/eser_29_KARTAL_2.jpg,alan-art-coffee/eser_29_KARTAL_2,3000,4000,1807989
+29,3,29_KARTAL_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221414/alan-art-coffee/eser_29_KARTAL_3.jpg,alan-art-coffee/eser_29_KARTAL_3,3000,4000,1325235
+2,1,2_ANTİK KADIN FİGÜRÜ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221424/alan-art-coffee/eser_2_ANT%C4%B0K_KADIN_F%C4%B0G%C3%9CR%C3%9C_1.jpg,alan-art-coffee/eser_2_ANTİK_KADIN_FİGÜRÜ_1,3000,4000,1484977
+2,2,2_ANTİK KADIN FİGÜRÜ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221435/alan-art-coffee/eser_2_ANT%C4%B0K_KADIN_F%C4%B0G%C3%9CR%C3%9C_2.jpg,alan-art-coffee/eser_2_ANTİK_KADIN_FİGÜRÜ_2,3000,4000,1668163
+2,3,2_ANTİK KADIN FİGÜRÜ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221443/alan-art-coffee/eser_2_ANT%C4%B0K_KADIN_F%C4%B0G%C3%9CR%C3%9C_3.jpg,alan-art-coffee/eser_2_ANTİK_KADIN_FİGÜRÜ_3,3000,4000,1172543
+30,1,30_AFGAN KIZI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221458/alan-art-coffee/eser_30_AFGAN_KIZI_1.jpg,alan-art-coffee/eser_30_AFGAN_KIZI_1,3000,4000,2374475
+30,2,30_AFGAN KIZI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221471/alan-art-coffee/eser_30_AFGAN_KIZI_2.jpg,alan-art-coffee/eser_30_AFGAN_KIZI_2,3000,4000,2162911
+30,3,30_AFGAN KIZI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221482/alan-art-coffee/eser_30_AFGAN_KIZI_3.jpg,alan-art-coffee/eser_30_AFGAN_KIZI_3,3000,4000,1529042
+31,1,"31_SAĞLIK, YAŞAM, NEŞE, HUZUR, KEYİF, UMUT MOZAİĞİ_1.jpg",https://res.cloudinary.com/dzimaffgf/image/upload/v1782221494/alan-art-coffee/eser_31_SA%C4%9ELIK__YA%C5%9EAM__NE%C5%9EE__HUZUR__KEY%C4%B0F__UMUT_MOZA%C4%B0%C4%9E%C4%B0_1.jpg,alan-art-coffee/eser_31_SAĞLIK__YAŞAM__NEŞE__HUZUR__KEYİF__UMUT_MOZAİĞİ_1,3000,4000,1942012
+31,2,"31_SAĞLIK, YAŞAM, NEŞE, HUZUR, KEYİF, UMUT MOZAİĞİ_2.jpg",https://res.cloudinary.com/dzimaffgf/image/upload/v1782221504/alan-art-coffee/eser_31_SA%C4%9ELIK__YA%C5%9EAM__NE%C5%9EE__HUZUR__KEY%C4%B0F__UMUT_MOZA%C4%B0%C4%9E%C4%B0_2.jpg,alan-art-coffee/eser_31_SAĞLIK__YAŞAM__NEŞE__HUZUR__KEYİF__UMUT_MOZAİĞİ_2,3000,4000,1634808
+31,3,"31_SAĞLIK, YAŞAM, NEŞE, HUZUR, KEYİF, UMUT MOZAİĞİ_3.jpg",https://res.cloudinary.com/dzimaffgf/image/upload/v1782221515/alan-art-coffee/eser_31_SA%C4%9ELIK__YA%C5%9EAM__NE%C5%9EE__HUZUR__KEY%C4%B0F__UMUT_MOZA%C4%B0%C4%9E%C4%B0_3.jpg,alan-art-coffee/eser_31_SAĞLIK__YAŞAM__NEŞE__HUZUR__KEYİF__UMUT_MOZAİĞİ_3,3000,4000,1923540
+32,1,32_TRAGEDYA MASKESİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221527/alan-art-coffee/eser_32_TRAGEDYA_MASKES%C4%B0_1.jpg,alan-art-coffee/eser_32_TRAGEDYA_MASKESİ_1,3000,4000,2231344
+32,2,32_TRAGEDYA MASKESİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221539/alan-art-coffee/eser_32_TRAGEDYA_MASKES%C4%B0_2.jpg,alan-art-coffee/eser_32_TRAGEDYA_MASKESİ_2,3000,4000,2286599
+32,3,32_TRAGEDYA MASKESİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221549/alan-art-coffee/eser_32_TRAGEDYA_MASKES%C4%B0_3.jpg,alan-art-coffee/eser_32_TRAGEDYA_MASKESİ_3,3000,4000,1584854
+33,1,33_SİLENOS_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221561/alan-art-coffee/eser_33_S%C4%B0LENOS_1.jpg,alan-art-coffee/eser_33_SİLENOS_1,3000,4000,2079856
+33,2,33_SİLENOS_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221573/alan-art-coffee/eser_33_S%C4%B0LENOS_2.jpg,alan-art-coffee/eser_33_SİLENOS_2,3000,4000,2331429
+33,3,33_SİLENOS_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221583/alan-art-coffee/eser_33_S%C4%B0LENOS_3.jpg,alan-art-coffee/eser_33_SİLENOS_3,3000,4000,1566077
+34,1,34_SERBEST KADIN ÇALIŞMASI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221594/alan-art-coffee/eser_34_SERBEST_KADIN_%C3%87ALI%C5%9EMASI_1.jpg,alan-art-coffee/eser_34_SERBEST_KADIN_ÇALIŞMASI_1,3000,4000,1859001
+34,2,34_SERBEST KADIN ÇALIŞMASI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221606/alan-art-coffee/eser_34_SERBEST_KADIN_%C3%87ALI%C5%9EMASI_2.jpg,alan-art-coffee/eser_34_SERBEST_KADIN_ÇALIŞMASI_2,3000,4000,2286402
+34,3,34_SERBEST KADIN ÇALIŞMASI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221617/alan-art-coffee/eser_34_SERBEST_KADIN_%C3%87ALI%C5%9EMASI_3.jpg,alan-art-coffee/eser_34_SERBEST_KADIN_ÇALIŞMASI_3,3000,4000,1915693
+36,1,36_HAYAT AĞACI KOLEKTİF ÇALIŞMA_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926650/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_1.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_1,3024,4032,1058144
+36,3,36_HAYAT AĞACI KOLEKTİF ÇALIŞMA_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1780926672/alan-art-coffee/eser_36_HAYAT_A%C4%9EACI_KOLEKT%C4%B0F_%C3%87ALI%C5%9EMA_3.jpg,alan-art-coffee/eser_36_HAYAT_AĞACI_KOLEKTİF_ÇALIŞMA_3,3024,4032,1384925
+37,1,37_RENKLİ KEDİ_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221678/alan-art-coffee/eser_37_RENKL%C4%B0_KED%C4%B0_1.jpg,alan-art-coffee/eser_37_RENKLİ_KEDİ_1,3000,4000,2021457
+37,2,37_RENKLİ KEDİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221689/alan-art-coffee/eser_37_RENKL%C4%B0_KED%C4%B0_2.jpg,alan-art-coffee/eser_37_RENKLİ_KEDİ_2,3000,4000,1782099
+37,3,37_RENKLİ KEDİ_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221699/alan-art-coffee/eser_37_RENKL%C4%B0_KED%C4%B0_3.jpg,alan-art-coffee/eser_37_RENKLİ_KEDİ_3,3000,4000,1679923
+3,1,3_NİKE 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221783/alan-art-coffee/eser_3_N%C4%B0KE_1_1.jpg,alan-art-coffee/eser_3_NİKE_1_1,3000,4000,2197466
+3,2,3_NİKE 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221798/alan-art-coffee/eser_3_N%C4%B0KE_1_2.jpg,alan-art-coffee/eser_3_NİKE_1_2,3000,4000,2543434
+3,3,3_NİKE 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221810/alan-art-coffee/eser_3_N%C4%B0KE_1_3.jpg,alan-art-coffee/eser_3_NİKE_1_3,3000,4000,1983698
+40,1,40_MOZAİKTEN ATATÜRK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221833/alan-art-coffee/eser_40_MOZA%C4%B0KTEN_ATAT%C3%9CRK_1.jpg,alan-art-coffee/eser_40_MOZAİKTEN_ATATÜRK_1,3000,4000,2355246
+40,2,40_MOZAİKTEN ATATÜRK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221846/alan-art-coffee/eser_40_MOZA%C4%B0KTEN_ATAT%C3%9CRK_2.jpg,alan-art-coffee/eser_40_MOZAİKTEN_ATATÜRK_2,3000,4000,2416804
+40,3,40_MOZAİKTEN ATATÜRK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221856/alan-art-coffee/eser_40_MOZA%C4%B0KTEN_ATAT%C3%9CRK_3.jpg,alan-art-coffee/eser_40_MOZAİKTEN_ATATÜRK_3,3000,4000,1503998
+41,1,41_ÇERÇEVELİ ZEYTİN DALI_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221869/alan-art-coffee/eser_41_%C3%87ER%C3%87EVEL%C4%B0_ZEYT%C4%B0N_DALI_1.jpg,alan-art-coffee/eser_41_ÇERÇEVELİ_ZEYTİN_DALI_1,3000,4000,2143243
+41,2,41_ÇERÇEVELİ ZEYTİN DALI_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221879/alan-art-coffee/eser_41_%C3%87ER%C3%87EVEL%C4%B0_ZEYT%C4%B0N_DALI_2.jpg,alan-art-coffee/eser_41_ÇERÇEVELİ_ZEYTİN_DALI_2,3000,4000,1706975
+41,3,41_ÇERÇEVELİ ZEYTİN DALI_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221888/alan-art-coffee/eser_41_%C3%87ER%C3%87EVEL%C4%B0_ZEYT%C4%B0N_DALI_3.jpg,alan-art-coffee/eser_41_ÇERÇEVELİ_ZEYTİN_DALI_3,3000,4000,1199655
+42,1,42_İSKELET BALIK_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221900/alan-art-coffee/eser_42_%C4%B0SKELET_BALIK_1.jpg,alan-art-coffee/eser_42_İSKELET_BALIK_1,3000,4000,2048232
+42,2,42_İSKELET BALIK_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221912/alan-art-coffee/eser_42_%C4%B0SKELET_BALIK_2.jpg,alan-art-coffee/eser_42_İSKELET_BALIK_2,3000,4000,2185421
+42,3,42_İSKELET BALIK_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221921/alan-art-coffee/eser_42_%C4%B0SKELET_BALIK_3.jpg,alan-art-coffee/eser_42_İSKELET_BALIK_3,3000,4000,1570475
+43,1,43_İskorpit Mozaik_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221932/alan-art-coffee/eser_43_%C4%B0skorpit_Mozaik_1.jpg,alan-art-coffee/eser_43_İskorpit_Mozaik_1,3000,4000,1905974
+43,2,43_İskorpit Mozaik_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221944/alan-art-coffee/eser_43_%C4%B0skorpit_Mozaik_2.jpg,alan-art-coffee/eser_43_İskorpit_Mozaik_2,3000,4000,1936838
+43,3,43_İskorpit Mozaik_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221955/alan-art-coffee/eser_43_%C4%B0skorpit_Mozaik_3.jpg,alan-art-coffee/eser_43_İskorpit_Mozaik_3,3000,4000,1483934
+44,1,44_Antik Balık 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221966/alan-art-coffee/eser_44_Antik_Bal%C4%B1k_1_1.jpg,alan-art-coffee/eser_44_Antik_Balık_1_1,3000,4000,1925912
+44,2,44_Antik Balık 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221977/alan-art-coffee/eser_44_Antik_Bal%C4%B1k_1_2.jpg,alan-art-coffee/eser_44_Antik_Balık_1_2,3000,4000,1846853
+44,3,44_Antik Balık 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221988/alan-art-coffee/eser_44_Antik_Bal%C4%B1k_1_3.jpg,alan-art-coffee/eser_44_Antik_Balık_1_3,3000,4000,1522666
+45,1,45_Antik Balık 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782221999/alan-art-coffee/eser_45_Antik_Bal%C4%B1k_2_1.jpg,alan-art-coffee/eser_45_Antik_Balık_2_1,3000,4000,1784281
+45,2,45_Antik Balık 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222009/alan-art-coffee/eser_45_Antik_Bal%C4%B1k_2_2.jpg,alan-art-coffee/eser_45_Antik_Balık_2_2,3000,4000,1724287
+45,3,45_Antik Balık 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222019/alan-art-coffee/eser_45_Antik_Bal%C4%B1k_2_3.jpg,alan-art-coffee/eser_45_Antik_Balık_2_3,3000,4000,1565787
+46,1,46_Antik Balık 3_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222031/alan-art-coffee/eser_46_Antik_Bal%C4%B1k_3_1.jpg,alan-art-coffee/eser_46_Antik_Balık_3_1,3000,4000,2114920
+46,2,46_Antik Balık 3_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222041/alan-art-coffee/eser_46_Antik_Bal%C4%B1k_3_2.jpg,alan-art-coffee/eser_46_Antik_Balık_3_2,3000,4000,1818986
+46,3,46_Antik Balık 3_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222051/alan-art-coffee/eser_46_Antik_Bal%C4%B1k_3_3.jpg,alan-art-coffee/eser_46_Antik_Balık_3_3,3000,4000,1397216
+47,1,47_ATLAR_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222062/alan-art-coffee/eser_47_ATLAR_1.jpg,alan-art-coffee/eser_47_ATLAR_1,3000,4000,1880505
+47,2,47_ATLAR_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222074/alan-art-coffee/eser_47_ATLAR_2.jpg,alan-art-coffee/eser_47_ATLAR_2,3000,4000,2168192
+47,3,47_ATLAR_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222083/alan-art-coffee/eser_47_ATLAR_3.jpg,alan-art-coffee/eser_47_ATLAR_3,3000,4000,1338865
+48,1,48_KURT_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222095/alan-art-coffee/eser_48_KURT_1.jpg,alan-art-coffee/eser_48_KURT_1,3000,4000,2068076
+48,2,48_KURT_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222107/alan-art-coffee/eser_48_KURT_2.jpg,alan-art-coffee/eser_48_KURT_2,3000,4000,1903514
+48,3,48_KURT_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222117/alan-art-coffee/eser_48_KURT_3.jpg,alan-art-coffee/eser_48_KURT_3,3000,4000,1479705
+50,2,50_TİLKİ_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222129/alan-art-coffee/eser_50_T%C4%B0LK%C4%B0_2.jpg,alan-art-coffee/eser_50_TİLKİ_2,3000,4000,2159919
+82,1,82_LAVOBO AYNASI.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782222814/alan-art-coffee/eser_82_LAVOBO_AYNASI.jpg,alan-art-coffee/eser_82_LAVOBO_AYNASI,3000,4000,1834156
+101,1,101_KAPLAN 2_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225233/alan-art-coffee/eser_101_KAPLAN_2_1.jpg,alan-art-coffee/eser_101_KAPLAN_2_1,3000,4000,2268145
+101,2,101_KAPLAN 2_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225245/alan-art-coffee/eser_101_KAPLAN_2_2.jpg,alan-art-coffee/eser_101_KAPLAN_2_2,3000,4000,2223972
+101,3,101_KAPLAN 2_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225255/alan-art-coffee/eser_101_KAPLAN_2_3.jpg,alan-art-coffee/eser_101_KAPLAN_2_3,3000,4000,1737638
+51,1,51_KAPLAN 1_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225295/alan-art-coffee/eser_51_KAPLAN_1_1.jpg,alan-art-coffee/eser_51_KAPLAN_1_1,3000,4000,2153890
+51,2,51_KAPLAN 1_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225307/alan-art-coffee/eser_51_KAPLAN_1_2.jpg,alan-art-coffee/eser_51_KAPLAN_1_2,3000,4000,1887492
+51,3,51_KAPLAN 1_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225318/alan-art-coffee/eser_51_KAPLAN_1_3.jpg,alan-art-coffee/eser_51_KAPLAN_1_3,3000,4000,1666204
+54,1,54_PARS_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225330/alan-art-coffee/eser_54_PARS_1.jpg,alan-art-coffee/eser_54_PARS_1,3000,4000,2085139
+54,2,54_PARS_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225496/alan-art-coffee/eser_54_PARS_2.jpg,alan-art-coffee/eser_54_PARS_2,3000,4000,2231955
+54,3,54_PARS_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225508/alan-art-coffee/eser_54_PARS_3.jpg,alan-art-coffee/eser_54_PARS_3,3000,4000,1937755
+60,1,60_ANTİK İNSAN_1.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225521/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_1.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_1,3000,4000,2089134
+60,2,60_ANTİK İNSAN_2.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225532/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_2.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_2,3000,4000,1845901
+60,3,60_ANTİK İNSAN_3.jpg,https://res.cloudinary.com/dzimaffgf/image/upload/v1782225545/alan-art-coffee/eser_60_ANT%C4%B0K_%C4%B0NSAN_3.jpg,alan-art-coffee/eser_60_ANTİK_İNSAN_3,3000,4000,1485457
