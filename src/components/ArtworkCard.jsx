@@ -14,7 +14,8 @@ export default function ArtworkCard({ artwork, onClick }) {
     status
   } = artwork;
 
-  const isSold = status && status.toLowerCase() === 'sold';
+  const statusNorm = (status || '').toLowerCase().replace(/ı/g,'i').replace(/İ/g,'i').trim();
+  const isSold = ['sold', 'satildi', 'satıldı', 'satti', 'satıldı'].includes(statusNorm) || statusNorm.startsWith('satil') || statusNorm.startsWith('satıl');
   const images = [image_url, image_url_2, image_url_3].filter(url => url && url.trim() !== '');
 
   return (
@@ -46,11 +47,7 @@ export default function ArtworkCard({ artwork, onClick }) {
           </div>
         )}
 
-        {isSold && (
-          <div className="sold-label-text">
-            Özel Koleksiyon
-          </div>
-        )}
+
       </div>
 
       <div className="gallery-card-meta">
@@ -59,13 +56,19 @@ export default function ArtworkCard({ artwork, onClick }) {
         <p className="card-desc-label">{material} • {cafe_location}</p>
 
         <div className="card-price-label">
-          {price_eur > 0 ? (
-            <span>{price_eur.toLocaleString('de-DE')} €</span>
-          ) : null}
-          {price_tl > 0 ? (
-            <span className="tl-price">{price_tl.toLocaleString('tr-TR')} TL</span>
+          {isSold ? (
+            <span className="sold-price-label">✦ Satıldı</span>
           ) : (
-            price_eur === 0 && <span className="exhibition-only">Sergileniyor</span>
+            <>
+              {price_eur > 0 ? (
+                <span>{price_eur.toLocaleString('de-DE')} €</span>
+              ) : null}
+              {price_tl > 0 ? (
+                <span className="tl-price">{price_tl.toLocaleString('tr-TR')} TL</span>
+              ) : (
+                price_eur === 0 && <span className="exhibition-only">Sergileniyor</span>
+              )}
+            </>
           )}
         </div>
       </div>

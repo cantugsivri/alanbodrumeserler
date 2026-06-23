@@ -19,36 +19,57 @@ OUTPUT_CSV = os.path.join(BASE_DIR, "cloudinary_urls.csv")
 FOLDER     = "alan-art-coffee"
 EXTS       = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".tiff", ".bmp"}
 
-# Klasoru otomatik bul (Eser_ ile baslayan)
+# Klasoru otomatik bul (eser ile baslayan, case-insensitive)
 PHOTOS_DIR = None
 for entry in os.listdir(BASE_DIR):
-    if entry.lower().startswith("eser_") and os.path.isdir(os.path.join(BASE_DIR, entry)):
+    if entry.lower().startswith("eser") and os.path.isdir(os.path.join(BASE_DIR, entry)):
         PHOTOS_DIR = os.path.join(BASE_DIR, entry)
         break
 
-def get_id(filename):
-    m = re.match(r'^(\d+)', os.path.splitext(filename)[0])
-    return m.group(1) if m else None
+def parse_filename(filename):
+    """
+    Yeni format: 100_RENKLİ YUVARLAK BALIK_2.jpg
+    Döndürür: (artwork_id, photo_number)
+    Eski format: 1.aşil.jpeg -> (1, 1)
+    """
+    name = os.path.splitext(filename)[0]
+    
+    # Yeni format: SAYI_İSİM_SAYI
+    m = re.match(r'^(\d+)_(.+)_(\d+)$', name)
+    if m:
+        return m.group(1), m.group(3)
+    
+    # Yeni format tek foto: SAYI_İSİM (foto numarası yok)
+    m = re.match(r'^(\d+)_(.+)$', name)
+    if m:
+        return m.group(1), "1"
+    
+    # Eski format: SAYI.isim
+    m = re.match(r'^(\d+)[._]', name)
+    if m:
+        return m.group(1), "1"
+    
+    return None, None
 
 def main():
     print("=== ALAN Art & Coffee - Cloudinary Yukleme ===")
 
     if not PHOTOS_DIR:
-        print("HATA: 'Eser_' ile baslayan fotograf klasoru bulunamadi!")
+        print("HATA: 'eser' ile baslayan fotograf klasoru bulunamadi!")
         return
 
     print(f"Klasor bulundu: {PHOTOS_DIR}")
 
-    # Mevcut CSV'yi oku
-    existing_ids = set()
+    # Mevcut CSV'yi oku - unique key: filename
+    existing_filenames = set()
     existing_rows = []
     if os.path.exists(OUTPUT_CSV):
         with open(OUTPUT_CSV, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
             for row in reader:
-                existing_ids.add(row["id"])
+                existing_filenames.add(row["filename"])
                 existing_rows.append(row)
-        print(f"Mevcut CSV: {len(existing_ids)} kayit (atlanacak)")
+        print(f"Mevcut CSV: {len(existing_filenames)} kayit (atlanacak)")
 
     all_files = [f for f in os.listdir(PHOTOS_DIR)
                  if os.path.splitext(f)[1].lower() in EXTS]
@@ -63,20 +84,20 @@ def main():
     success = skip = error = 0
 
     for filename in sorted(all_files):
-        artwork_id = get_id(filename)
-        filepath   = os.path.join(PHOTOS_DIR, filename)
-        display_id = artwork_id if artwork_id else f"?({filename})"
-
-        if artwork_id and artwork_id in existing_ids:
-            print(f"  ATLANDI [{display_id}] {filename}")
+        if filename in existing_filenames:
+            print(f"  ATLANDI: {filename}")
             skip += 1
             continue
+
+        artwork_id, photo_num = parse_filename(filename)
+        filepath = os.path.join(PHOTOS_DIR, filename)
+        display  = f"[{artwork_id or '?'}]" 
 
         safe_name = re.sub(r'[^\w\-]', '_', os.path.splitext(filename)[0])
         public_id = f"{FOLDER}/eser_{safe_name}"
 
         try:
-            print(f"  YUKLENIYOR [{display_id}] {filename}...", end=" ", flush=True)
+            print(f"  YUKLENIYOR {display} {filename}...", end=" ", flush=True)
             result = cloudinary.uploader.upload(
                 filepath,
                 public_id     = public_id,
@@ -90,6 +111,7 @@ def main():
             print(f"    URL: {url}")
             new_rows.append({
                 "id":             artwork_id or "",
+                "photo_num":      photo_num or "1",
                 "filename":       filename,
                 "cloudinary_url": url,
                 "public_id":      result["public_id"],
@@ -104,7 +126,7 @@ def main():
 
     all_rows = existing_rows + new_rows
     if all_rows:
-        fields = ["id","filename","cloudinary_url","public_id","width","height","bytes"]
+        fields = ["id","photo_num","filename","cloudinary_url","public_id","width","height","bytes"]
         with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=fields)
             writer.writeheader()
@@ -118,11 +140,6 @@ def main():
   Hata     : {error}
   Toplam   : {len(all_files)}
 ==============================""")
-
-    if new_rows:
-        print("\n--- CLOUDINARY URL LISTESI ---")
-        for row in new_rows:
-            print(f"ID {row['id']}: {row['cloudinary_url']}")
 
 if __name__ == "__main__":
     main()

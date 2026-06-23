@@ -23,6 +23,8 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
   } = artwork;
 
   const images = [image_url, image_url_2, image_url_3].filter(url => url && url.trim() !== '');
+  const statusNorm = (status || '').toLowerCase().replace(/ı/g,'i').replace(/İ/g,'i').trim();
+  const isSold = ['sold', 'satildi', 'satıldı'].includes(statusNorm) || statusNorm.startsWith('satil') || statusNorm.startsWith('satıl');
   const [activeIndex, setActiveIndex] = useState(0);
   const [lightboxIndex, setLightboxIndex] = useState(0);
   const scrollRef = useRef(null);
@@ -193,13 +195,19 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
             <div className="boutique-price-block">
               <div className="boutique-price-label">Eser Değeri</div>
               <div className="boutique-price-values">
-                {price_eur > 0 ? (
-                  <span>{price_eur.toLocaleString('de-DE')} €</span>
-                ) : null}
-                {price_tl > 0 ? (
-                  <span className="tl-sub">/ {price_tl.toLocaleString('tr-TR')} TL</span>
+                {isSold ? (
+                  <span className="sold-price-label">✦ Satıldı</span>
                 ) : (
-                  price_eur === 0 && <span className="exhibition-text">Sergileniyor (Satılık Değil)</span>
+                  <>
+                    {price_eur > 0 ? (
+                      <span>{price_eur.toLocaleString('de-DE')} €</span>
+                    ) : null}
+                    {price_tl > 0 ? (
+                      <span className="tl-sub">/ {price_tl.toLocaleString('tr-TR')} TL</span>
+                    ) : (
+                      price_eur === 0 && <span className="exhibition-text">Sergileniyor (Satılık Değil)</span>
+                    )}
+                  </>
                 )}
               </div>
             </div>

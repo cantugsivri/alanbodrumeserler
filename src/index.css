@@ -406,6 +406,15 @@ input {
   font-size: 0.75rem;
 }
 
+.sold-price-label {
+  color: #c0392b;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
 /* Slide-up Boutique Detail Sheet */
 .boutique-backdrop {
   position: fixed;
