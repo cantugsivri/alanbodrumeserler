@@ -44,18 +44,6 @@ export default function ArtworkCard({ artwork, onClick }) {
     }
   };
 
-  const handlePrev = (e) => {
-    e.stopPropagation();
-    const prevIdx = activeIndex === 0 ? images.length - 1 : activeIndex - 1;
-    scrollToImage(prevIdx);
-  };
-
-  const handleNext = (e) => {
-    e.stopPropagation();
-    const nextIdx = activeIndex === images.length - 1 ? 0 : activeIndex + 1;
-    scrollToImage(nextIdx);
-  };
-
   return (
     <div className="gallery-card animate-fade-in-up" onClick={onClick}>
       <div className="gallery-card-frame">
@@ -90,37 +78,16 @@ export default function ArtworkCard({ artwork, onClick }) {
         )}
 
         {images.length > 1 && (
-          <>
-            <button 
-              className="card-carousel-arrow prev" 
-              onClick={handlePrev} 
-              aria-label="Önceki Görsel"
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M15 18l-6-6 6-6" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-            <button 
-              className="card-carousel-arrow next" 
-              onClick={handleNext} 
-              aria-label="Sonraki Görsel"
-            >
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                <path d="M9 5l6 6-6 6" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-
-            <div className="card-multi-image-indicator" onClick={(e) => e.stopPropagation()}>
-              {images.map((_, idx) => (
-                <button
-                  key={idx}
-                  className={`indicator-dot ${idx === activeIndex ? 'active' : ''}`}
-                  onClick={(e) => scrollToImage(idx, e)}
-                  aria-label={`Görsel ${idx + 1}`}
-                />
-              ))}
-            </div>
-          </>
+          <div className="card-multi-image-indicator" onClick={(e) => e.stopPropagation()}>
+            {images.map((_, idx) => (
+              <button
+                key={idx}
+                className={`indicator-dot ${idx === activeIndex ? 'active' : ''}`}
+                onClick={(e) => scrollToImage(idx, e)}
+                aria-label={`Görsel ${idx + 1}`}
+              />
+            ))}
+          </div>
         )}
       </div>
 

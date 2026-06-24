@@ -1258,52 +1258,5 @@ input {
   position: relative;
 }
 
-/* Card Carousel Arrows */
-.card-carousel-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background-color: rgba(252, 250, 246, 0.9);
-  border: 1px solid rgba(232, 227, 215, 0.6);
-  color: var(--color-text-primary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 6;
-  opacity: 0;
-  transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 2px 6px rgba(28, 27, 26, 0.08);
-}
-
-.card-carousel-arrow:hover {
-  background-color: var(--color-bg-primary);
-  transform: translateY(-50%) scale(1.05);
-}
-
-.card-carousel-arrow.prev {
-  left: 10px;
-}
-
-.card-carousel-arrow.next {
-  right: 10px;
-}
-
-/* Hover effect on desktop */
-@media (hover: hover) {
-  .gallery-card:hover .card-carousel-arrow {
-    opacity: 1;
-  }
-}
-
-/* Always show slightly visible arrows on touch screens */
-@media (hover: none) {
-  .card-carousel-arrow {
-    opacity: 0.7;
-  }
-}
 
 
