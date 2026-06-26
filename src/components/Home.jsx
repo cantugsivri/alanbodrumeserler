@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { fetchArtworks } from '../services/sheets';
 import ArtworkCard from './ArtworkCard';
 import ArtworkDetail from './ArtworkDetail';
@@ -10,6 +10,40 @@ export default function Home() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('All');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
+  const hasPushedHash = useRef(false);
+
+  // Android geri tuşu desteği: hash değişimini dinle
+  useEffect(() => {
+    const handleHashChange = () => {
+      // Hash #detail veya #lightbox değilse (geri tuşuyla temizlendi), detayı kapat
+      if (window.location.hash !== '#detail' && window.location.hash !== '#lightbox') {
+        hasPushedHash.current = false;
+        setSelectedArtwork(null);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const handleSelectArtwork = (art) => {
+    if (hasPushedHash.current) {
+      // Zaten #detail var, üstüne ekleme — sadece değiştir
+      window.history.replaceState(null, '', '#detail');
+    } else {
+      window.location.hash = 'detail';
+      hasPushedHash.current = true;
+    }
+    setSelectedArtwork(art);
+  };
+
+  const handleCloseDetail = () => {
+    if (hasPushedHash.current) {
+      hasPushedHash.current = false;
+      window.history.back(); // hash temizlenir → hashchange tetiklenir → detay kapanır
+    } else {
+      setSelectedArtwork(null);
+    }
+  };
 
   // Load artworks
   useEffect(() => {
@@ -129,7 +163,7 @@ export default function Home() {
                   <ArtworkCard
                     key={art.id}
                     artwork={art}
-                    onClick={() => setSelectedArtwork(art)}
+                    onClick={() => handleSelectArtwork(art)}
                   />
                 ))}
               </div>
@@ -162,8 +196,8 @@ export default function Home() {
       {selectedArtwork && (
         <ArtworkDetail
           artwork={selectedArtwork}
-          onClose={() => setSelectedArtwork(null)}
-          onSelectArtwork={(art) => setSelectedArtwork(art)}
+          onClose={handleCloseDetail}
+          onSelectArtwork={(art) => handleSelectArtwork(art)}
           allArtworks={artworks}
         />
       )}

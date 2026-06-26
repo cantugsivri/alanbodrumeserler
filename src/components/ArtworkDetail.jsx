@@ -3,6 +3,34 @@ import React, { useState, useEffect, useRef } from 'react';
 export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allArtworks = [] }) {
   const [isLightboxOpen, setIsLightboxOpen] = useState(false);
   const detailRef = useRef(null);
+  const lightboxPushedHash = useRef(false);
+
+  // Lightbox için Android geri tuşu desteği
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash !== '#lightbox' && isLightboxOpen) {
+        lightboxPushedHash.current = false;
+        setIsLightboxOpen(false);
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, [isLightboxOpen]);
+
+  const handleOpenLightbox = () => {
+    window.location.hash = 'lightbox';
+    lightboxPushedHash.current = true;
+    setIsLightboxOpen(true);
+  };
+
+  const handleCloseLightbox = () => {
+    if (lightboxPushedHash.current) {
+      lightboxPushedHash.current = false;
+      window.history.back(); // #lightbox → #detail → hashchange → lightbox kapanır
+    } else {
+      setIsLightboxOpen(false);
+    }
+  };
 
   const {
     id,
@@ -134,7 +162,7 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
                         src={url}
                         alt={`${artwork_name} - Görsel ${idx + 1}`}
                         className="boutique-carousel-img"
-                        onClick={() => setIsLightboxOpen(true)}
+                        onClick={() => handleOpenLightbox()}
                         onError={(e) => {
                           e.target.style.display = 'none';
                         }}
@@ -172,7 +200,7 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
                 )}
               </>
             ) : (
-              <div className="boutique-visual-canvas" onClick={() => setIsLightboxOpen(true)}>
+              <div className="boutique-visual-canvas" onClick={() => handleOpenLightbox()}>
                 <span className="fallback-number-serif">{id}</span>
               </div>
             )}
@@ -242,8 +270,8 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
 
       {/* Lightbox */}
       {isLightboxOpen && (
-        <div className="fine-lightbox" onClick={() => setIsLightboxOpen(false)}>
-          <button className="fine-lightbox-close" onClick={() => setIsLightboxOpen(false)}>
+        <div className="fine-lightbox" onClick={handleCloseLightbox}>
+          <button className="fine-lightbox-close" onClick={handleCloseLightbox}>
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <path d="M18 6L6 18M6 6l12 12" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
@@ -256,7 +284,7 @@ export default function ArtworkDetail({ artwork, onClose, onSelectArtwork, allAr
                   alt={artwork_name} 
                   className="fine-lightbox-img animate-fade-in" 
                   key={lightboxIndex}
-                  onClick={() => setIsLightboxOpen(false)}
+                  onClick={handleCloseLightbox}
                 />
                 
                 {images.length > 1 && (
