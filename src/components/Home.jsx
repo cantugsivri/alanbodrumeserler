@@ -4,7 +4,7 @@ import ArtworkCard from './ArtworkCard';
 import ArtworkDetail from './ArtworkDetail';
 import logoImg from '../assets/logo.jpeg';
 
-export default function Home() {
+export default function Home({ onBack }) {
   const [artworks, setArtworks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -84,6 +84,14 @@ export default function Home() {
 
       {/* Centered Large Logo & Minimal Header */}
       <header className="brand-header">
+        {onBack && (
+          <button onClick={onBack} className="gallery-back-btn" aria-label="Geri Dön">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M19 12H5M12 19l-7-7 7-7" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span>Ana Sayfa</span>
+          </button>
+        )}
         <div className="brand-logo-container">
           <img src={logoImg} alt="ALAN Art & Coffee Logo" className="brand-logo-img" />
         </div>

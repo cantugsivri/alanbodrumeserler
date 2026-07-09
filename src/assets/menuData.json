@@ -1,0 +1,215 @@
+{
+  "categories": [
+    {
+      "id": "kahveler",
+      "name": "Kahveler",
+      "subcategories": [
+        {
+          "name": "Sıcak Kahveler",
+          "items": [
+            { "name": "Double Espresso", "description": "Yoğun aromalı, çift shot saf espresso", "price": 170 },
+            { "name": "Espresso Macchiato", "description": "Üzeri hafif süt köpüğü ile yumuşatılmış espresso", "price": 190 },
+            { "name": "Americano", "description": "Espresso üzerine sıcak su eklenerek hazırlanan hafif içimli kahve", "price": 170 },
+            { "name": "Cortado", "description": "Eşit oranda süt ve espresso ile dengeli tat", "price": 180 },
+            { "name": "Flat White", "description": "İnce dokulu süt ile güçlü espresso uyumu", "price": 200 },
+            { "name": "Cappuccino", "description": "Yoğun süt köpüğü ve espresso ile klasik lezzet", "price": 220 },
+            { "name": "Coffee Latte", "description": "Bol sütlü, yumuşak içimli espresso bazlı kahve", "price": 240 },
+            { "name": "Mocha", "description": "Çikolata ve espressonun buluştuğu tatlı kahve deneyimi", "price": 260 },
+            { "name": "Affogato", "description": "Vanilyalı dondurma üzerine sıcak espresso çekilerek servis edilir", "price": 300 },
+            { "name": "Türk Kahvesi", "description": "Geleneksel yöntemle pişirilen yoğun aromalı kahve", "price": 100 },
+            { "name": "Duble Türk Kahvesi", "description": "Daha yoğun ve güçlü içim için çift porsiyon Türk kahvesi", "price": 150 },
+            { "name": "Filtre Kahve", "description": "Yavaş demlenen, dengeli ve aromatik kahve", "price": 170 },
+            { "name": "Baileys Coffee", "description": "Baileys likörü ile zenginleştirilmiş kremamsı kahve", "price": 450 },
+            { "name": "Irish Coffee", "description": "İrlanda viskisi ve krema ile hazırlanan sıcak kahve", "price": 450 }
+          ]
+        },
+        {
+          "name": "Soğuk Kahveler",
+          "items": [
+            { "name": "Iced Americano", "description": "Espresso ve soğuk suyla hazırlanan, ferah ve sert içimli kahve", "price": 200 },
+            { "name": "Iced Flat White", "description": "Espresso ve ince dokulu sütle dengeli, yumuşak içimli kahve", "price": 220 },
+            { "name": "Iced Latte", "description": "Espresso ve soğuk sütle hazırlanan hafif ve kremamsı içim", "price": 240 },
+            { "name": "Iced Chocolate Mocha", "description": "Çikolata ve espresso birleşimiyle tatlı ve yoğun aromalı kahve", "price": 260 },
+            { "name": "Frappe Greek", "description": "Köpüklü, buzlu ve ferahlatıcı klasik Yunan kahvesi", "price": 220 },
+            { "name": "Frappe Classic", "description": "Köpüklü, buzlu ve ferahlatıcı klasik tam bir klasik", "price": 250 },
+            { "name": "Ice Cream Frappe", "description": "Klasik frappe ve dondurma ferahlatıcı tatlı", "price": 300 }
+          ]
+        },
+        {
+          "name": "Ekstralar",
+          "items": [
+            { "name": "Ekstra Shot Espresso", "price": 70 },
+            { "name": "Vegan Süt Seçeneği", "price": 40 },
+            { "name": "Laktozsuz Süt Seçeneği", "price": 30 },
+            { "name": "Ekstra Shot (Baileys-Irish Coffee)", "price": 250 },
+            { "name": "İlave Süt", "price": 30 },
+            { "name": "Ekstra Shot Organik Vanilya-Karamel", "price": 50 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icecekler",
+      "name": "Sıcak & Soğuk İçecekler",
+      "subcategories": [
+        {
+          "name": "Sıcak İçecekler",
+          "items": [
+            { "name": "Matcha Latte", "description": "Japon yeşil çayı ve süt ile hazırlanan kremamsı içecek", "price": 300 },
+            { "name": "Earl Grey", "description": "Bergamot aromalı klasik siyah çay", "price": 170 },
+            { "name": "Ihlamur", "description": "Rahatlatıcı ve yumuşak içimli bitki çayı", "price": 200 },
+            { "name": "Yeşil Çay", "description": "Hafif ve ferahlatıcı doğal çay", "price": 200 },
+            { "name": "Adaçayı", "description": "Yoğun aromalı, geleneksel bitki çayı", "price": 200 },
+            { "name": "Salep", "description": "Tarçın ile servis edilen yoğun ve sıcak kış içeceği", "price": 250 },
+            { "name": "Sıcak Çikolata", "description": "Zengin kakao tadıyla yoğun ve kremamsı içim", "price": 250 }
+          ]
+        },
+        {
+          "name": "Soğuk İçecekler",
+          "items": [
+            { "name": "Ev Limonatası", "description": "Taze limon ile hazırlanan ferahlatıcı içecek", "price": 250 },
+            { "name": "Taze Portakal Suyu", "description": "Sıkılmış doğal portakal suyu", "price": 250 },
+            { "name": "Iced Matcha Latte", "description": "Soğuk süt ve matcha ile ferahlatıcı içim", "price": 300 },
+            { "name": "Maden Suyu", "description": "Doğal mineralli sade soda", "price": 80 },
+            { "name": "Churchill", "description": "Maden suyu, limon ve tuz ile ferahlatıcı karışım", "price": 120 },
+            { "name": "Şişe Su", "description": "Doğal içme suyu", "price": 60 },
+            { "name": "Mandalinalı Gazoz", "description": "Mandalina aromalı gazlı içecek", "price": 120 },
+            { "name": "Meyveli Smoothie", "description": "Strawberry Classic (Çilek+Süt) / Mango Tropic (Mango+Portakal) / Banana Protein (Muz+Süt+Yulaf)", "price": 350 },
+            { "name": "Milkshake", "description": "Strawberry (Çilek+Vanilyalı Dondurma+Süt) / Chocolate (Çikolata+Çikolatalı Dondurma+Süt) / Banana (Muz+Vanilyalı Dondurma+Süt)", "price": 350 },
+            { "name": "Vegan Süt Seçeneği", "price": 40 },
+            { "name": "Laktozsuz Süt Seçeneği", "price": 30 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bar",
+      "name": "Kokteyl & Bar",
+      "subcategories": [
+        {
+          "name": "Klasik Kokteyller",
+          "items": [
+            { "name": "Espresso Martini", "description": "Espresso ve likörlerin buluştuğu yoğun ve enerjik kokteyl", "price": 650 },
+            { "name": "Margarita", "description": "Tekila, lime ve tuz ile ferah ve dengeli klasik", "price": 650 },
+            { "name": "Whiskey Sour", "description": "Viski, limon ve şeker dengesiyle yumuşak içim", "price": 650 },
+            { "name": "Negroni", "description": "Cin, vermut ve bitter likör ile güçlü ve aromatik", "price": 650 },
+            { "name": "Cin Tonik", "description": "Cin ve tonik birleşimiyle ferah, hafif acımsı klasik kokteyl", "price": 600 },
+            { "name": "Old Fashioned", "description": "Viski, şeker ve angostura bitter mükemmel bir klasik", "price": 650 },
+            { "name": "Bloody Mary", "description": "Votka, domates suyu, Tabasco, Worcestershire sos ve baharatlar", "price": 700 }
+          ]
+        },
+        {
+          "name": "ALAN Özel Kokteyller",
+          "items": [
+            { "name": "Pedasa III", "description": "Espresso ve likörlerin buluştuğu yoğun ve enerjik kokteyle Alan yorumu", "price": 750 },
+            { "name": "Chili Myndos", "description": "Tekila, lime ve tuz ile ferah ve dengeli Alan yorumuyla daha acı", "price": 750 },
+            { "name": "Felicita", "description": "Cin, limon ve özel fesleğenli sosun uyumuyla yumuşak içim", "price": 750 },
+            { "name": "Karya", "description": "Vodka ve Bodrum meyvelerinin buluşması tatlı içim", "price": 750 },
+            { "name": "Mosaic", "description": "Özel dokunuşlarla zenginleştirilmiş cin tonik", "price": 750 }
+          ]
+        },
+        {
+          "name": "Spritz",
+          "items": [
+            { "name": "Aperol Spritz", "description": "Aperol, prosecco ve soda ile hafif ve ferah", "price": 650 },
+            { "name": "Campari Spritz", "description": "Campari ile daha yoğun ve hafif acımsı spritz", "price": 650 },
+            { "name": "Limoncello Spritz", "description": "Limon likörü ile taze ve aromatik içim", "price": 650 },
+            { "name": "Hugo Spritz", "description": "Mürver çiçeği aromasıyla hafif ve çiçeksi lezzet", "price": 650 }
+          ]
+        },
+        {
+          "name": "Şaraplar",
+          "items": [
+            { "name": "Kırmızı Şarap (Kadeh)", "description": "Yoğun aromalı, dengeli ve karakterli şarap seçkisi", "price": 300 },
+            { "name": "Beyaz Şarap (Kadeh)", "description": "Hafif, ferah ve meyvemsi aromalar", "price": 300 },
+            { "name": "Blush Şarap (Kadeh)", "description": "Taze, hafif ve zarif içimli roze şarap", "price": 300 },
+            { "name": "Şişe Sunum", "description": "Detaylı bilgi ve öneriler için lütfen servis ekibimize danışınız", "price": "Detaylar için danışınız" }
+          ]
+        },
+        {
+          "name": "Fıçı Biralar",
+          "items": [
+            { "name": "Carlsberg 50 cl", "description": "Yumuşak içimli, dengeli aromalara sahip lager bira", "price": 250 },
+            { "name": "Carlsberg 33 cl", "description": "Yumuşak içimli, dengeli aromalara sahip lager bira", "price": 200 },
+            { "name": "Blanc 50 cl", "description": "Buğday maltı ve narenciye notalarıyla ferahlatıcı", "price": 300 },
+            { "name": "Blanc 33 cl", "description": "Buğday maltı ve narenciye notalarıyla ferahlatıcı", "price": 240 }
+          ]
+        },
+        {
+          "name": "Şişe Biralar",
+          "items": [
+            { "name": "Tuborg Gold 50 cl", "description": "Dolgun gövdeli, klasik lager lezzeti", "price": 250 },
+            { "name": "Tuborg Gold 33 cl", "description": "Dolgun gövdeli, klasik lager lezzeti", "price": 200 },
+            { "name": "Carlsberg 50 cl", "description": "Ferahlatıcı ve yumuşak içimli lager", "price": 270 },
+            { "name": "Carlsberg 33 cl", "description": "Ferahlatıcı ve yumuşak içimli lager", "price": 220 },
+            { "name": "Tuborg Filtresiz", "description": "Doğal, bulanık görünüm ve yoğun aroma", "price": 270 },
+            { "name": "Carlsberg Luna", "description": "Narenciye dokunuşlarıyla aromatik ve farklı bir deneyim", "price": 300 },
+            { "name": "Tuborg Ice", "description": "Ekstra soğuk filtrasyon ile keskin ve ferah içim", "price": 240 },
+            { "name": "Blanc 33 cl", "description": "Meyvemsi ve hafif baharatlı buğday birası", "price": 260 },
+            { "name": "Guinness", "description": "Yoğun kıvamlı, kavruk aromalı koyu stout bira", "price": 400 }
+          ]
+        },
+        {
+          "name": "Shotlar & Alkoller",
+          "items": [
+            { "name": "Olmega (30cl)", "description": "Agave aromalı, hafif isli ve karakteristik Meksika tekilası", "price": 250 },
+            { "name": "Jägermeister (30cl)", "description": "Bitkisel ve baharatlı aromalara sahip, yoğun ve soğuk içimli likör", "price": 250 },
+            { "name": "J. Walker Black Label (30cl)", "description": "İsli, vanilya ve meşe notalarıyla dengeli içime sahip premium harman viski", "price": 250 },
+            { "name": "Jameson (30cl)", "description": "Yumuşak, hafif tatlı ve dengeli İrlanda viskisi", "price": 250 },
+            { "name": "Skinos Mastika (30cl)", "description": "Mastika reçinesinden elde edilen, hafif tatlı ve aromatik likör", "price": 250 },
+            { "name": "Vodka Smirnoff (Tek 50cl)", "price": 250 },
+            { "name": "Vodka Smirnoff (Duble 100cl)", "price": 400 },
+            { "name": "Whisky J. Walker Black Label (Tek 50cl)", "price": 400 },
+            { "name": "Whisky J. Walker Black Label (Duble 100cl)", "price": 600 },
+            { "name": "Whisky Jameson (Tek 50cl)", "price": 300 },
+            { "name": "Whisky Jameson (Duble 100cl)", "price": 500 },
+            { "name": "Cin Gordon's (Tek 50cl)", "price": 250 },
+            { "name": "Cin Gordon's (Duble 100cl)", "price": 400 },
+            { "name": "Cin Mozaik (Tek 50cl)", "price": 400 },
+            { "name": "Cin Mozaik (Duble 100cl)", "price": 600 },
+            { "name": "Prosecco Kadeh", "description": "Hafif, köpüklü ve ferah; meyvemsi aromalara sahip İtalyan şarap", "price": 350 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yiyecekler",
+      "name": "Yiyecek Menüsü",
+      "subcategories": [
+        {
+          "name": "Tatlılar",
+          "items": [
+            { "name": "Tiramisu", "description": "Kahve ve mascarpone kremasıyla hazırlanan klasik İtalyan tatlısı", "price": 350 },
+            { "name": "Supangle", "description": "Yoğun çikolatalı, kremamsı kıvamda soğuk tatlı", "price": 300 },
+            { "name": "Magnolia", "description": "Bisküvi, krema ve meyve katmanlarıyla hafif sütlü tatlı", "price": 350 },
+            { "name": "San Sebastian", "description": "Dışı hafif yanık, içi akışkan krem peynirli cheesecake", "price": 450 },
+            { "name": "Cheesecake", "description": "Krem peynir bazlı, yumuşak ve dengeli tatlı", "price": 450 },
+            { "name": "Havuçlu Kek", "description": "Havuç ve baharatlarla zenginleşmiş nemli kek", "price": 350 },
+            { "name": "Çikolatalı Cookie", "description": "Dışı hafif kıtır, içi yumuşak çikolata parçacıklı kurabiye", "price": 300 },
+            { "name": "Alan Muhallebi", "description": "Bodrum mandalinalı hafif ve ferah muhallebi", "price": 350 },
+            { "name": "Mozaik Pasta", "description": "Bisküvi ve kakaonun birleşimiyle hazırlanan soğuk pasta", "price": 350 }
+          ]
+        },
+        {
+          "name": "Tuzlular",
+          "items": [
+            { "name": "Poğaça (Peynirli / Patatesli / Kıymalı)", "description": "Yumuşak hamur içinde çeşitli iç harçlarla hazırlanan klasik poğaça", "price": 100 },
+            { "name": "Kalem Börek (Peynirli / Patatesli / Kıymalı)", "description": "İnce yufkadan sarılmış, çıtır ve lezzetli börek", "price": 150 },
+            { "name": "Alan Börek (Bodrum Otları / Peynir)", "description": "Bodrum'a özgü otlar ve peynirle hazırlanmış özel börek", "price": 200 },
+            { "name": "Tart (Ispanaklı / Pırasalı)", "description": "Sebze dolgulu, gevrek tabanlı tuzlu tart", "price": 250 },
+            { "name": "Akdeniz Sandviç", "description": "Beyaz peynir, zeytin, kuru domates, salatalık ve özel dokunuşlar ile soğuk sandviç", "price": 350 },
+            { "name": "Somonlu Sandviç", "description": "Somon, özel avokadolu sos, taze nane, salatalık ve özel dokunuşlar ile soğuk sandviç", "price": 400 }
+          ]
+        },
+        {
+          "name": "Atıştırmalıklar",
+          "items": [
+            { "name": "Kuruyemiş", "description": "Taze ve karışık çerez seçkisi", "price": 300 },
+            { "name": "Turşu Tabağı", "description": "Özenle seçilmiş çeşitli turşulardan oluşan karışık tabak", "price": 300 },
+            { "name": "Peynir Tabağı", "description": "Seçkin peynir çeşitlerinden oluşan sunum tabağı", "price": 450 }
+          ]
+        }
+      ]
+    }
+  ]
+}
