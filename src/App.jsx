@@ -11,6 +11,9 @@ export default function App() {
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash.replace('#', '');
+      // 'detail' ve 'lightbox' hash'leri Home.jsx tarafından iç navigasyon için kullanılır
+      // — bunları görünce view'ı değiştirme, mevcut sayfada kal.
+      if (hash === 'detail' || hash === 'lightbox') return;
       if (['gallery', 'menu', 'events'].includes(hash)) {
         setView(hash);
       } else {
