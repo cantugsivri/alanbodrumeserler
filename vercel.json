@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "alanbodrumeserler.vercel.app"
+        }
+      ],
+      "destination": "https://www.alanbodrum.com/:path*",
+      "permanent": true
+    }
+  ]
+}
