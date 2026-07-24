@@ -105,7 +105,8 @@
             { "name": "Chili Myndos", "description": "Tekila, lime ve tuz ile ferah ve dengeli Alan yorumuyla daha acı", "price": 750 },
             { "name": "Felicita", "description": "Cin, limon ve özel fesleğenli sosun uyumuyla yumuşak içim", "price": 750 },
             { "name": "Karya", "description": "Vodka ve Bodrum meyvelerinin buluşması tatlı içim", "price": 750 },
-            { "name": "Mosaic", "description": "Özel dokunuşlarla zenginleştirilmiş cin tonik", "price": 750 }
+            { "name": "Mosaic", "description": "Özel dokunuşlarla zenginleştirilmiş cin tonik", "price": 750 },
+            { "name": "Pisho Cat", "description": "Kafemizin daimi misafiri kedimize özel hazırladığımız viskili çilekli ekşi bir kokteyl", "price": 750 }
           ]
         },
         {
