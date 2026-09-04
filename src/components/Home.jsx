@@ -1,16 +1,25 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { fetchArtworks } from '../services/sheets';
+import { getCachedArtworks, refreshArtworksInBackground } from '../services/sheets';
 import ArtworkCard from './ArtworkCard';
 import ArtworkDetail from './ArtworkDetail';
 import logoImg from '../assets/logo.jpeg';
 
 export default function Home({ onBack }) {
-  const [artworks, setArtworks] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [artworks, setArtworks] = useState(() => {
+    // Anında yerel/cache verisini yükle — sıfır bekleme
+    const cached = getCachedArtworks();
+    return cached.filter(item => item.artwork_name);
+  });
+  const [loading] = useState(false); // Cache-first: her zaman anında hazır
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedLocation, setSelectedLocation] = useState('All');
   const [selectedArtwork, setSelectedArtwork] = useState(null);
   const hasPushedHash = useRef(false);
+
+  // Infinite scroll
+  const ITEMS_PER_PAGE = 12;
+  const [visibleCount, setVisibleCount] = useState(ITEMS_PER_PAGE);
+  const sentinelRef = useRef(null);
 
   // Android geri tuşu desteği: hash değişimini dinle
   useEffect(() => {
@@ -45,17 +54,36 @@ export default function Home({ onBack }) {
     }
   };
 
-  // Load artworks
+  // Arka planda Google Sheets'ten güncel veriyi çek
   useEffect(() => {
-    async function loadData() {
-      setLoading(true);
-      const data = await fetchArtworks();
-      const cleanData = data.filter(item => item.artwork_name);
+    refreshArtworksInBackground((freshData) => {
+      const cleanData = freshData.filter(item => item.artwork_name);
       setArtworks(cleanData);
-      setLoading(false);
-    }
-    loadData();
+    });
   }, []);
+
+  // Filtre/arama değiştiğinde görünen sayısını sıfırla
+  useEffect(() => {
+    setVisibleCount(ITEMS_PER_PAGE);
+  }, [searchQuery, selectedLocation]);
+
+  // Infinite scroll: Intersection Observer
+  useEffect(() => {
+    const sentinel = sentinelRef.current;
+    if (!sentinel) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisibleCount(prev => prev + ITEMS_PER_PAGE);
+        }
+      },
+      { rootMargin: '200px' }
+    );
+
+    observer.observe(sentinel);
+    return () => observer.disconnect();
+  }, [loading, artworks]);
 
   // Get unique locations for clean flat link separators
   const locations = ['All', ...new Set(artworks.map(art => art.cafe_location).filter(Boolean))];
@@ -167,7 +195,7 @@ export default function Home({ onBack }) {
                 Koleksiyondan <strong>{filteredArtworks.length}</strong> Değerli Eser Listeleniyor
               </div>
               <div className="gallery-grid">
-                {filteredArtworks.map(art => (
+                {filteredArtworks.slice(0, visibleCount).map(art => (
                   <ArtworkCard
                     key={art.id}
                     artwork={art}
@@ -175,6 +203,10 @@ export default function Home({ onBack }) {
                   />
                 ))}
               </div>
+              {/* Infinite scroll sentinel — görünür olduğunda daha fazla eser yükler */}
+              {visibleCount < filteredArtworks.length && (
+                <div ref={sentinelRef} style={{ height: '1px' }} />
+              )}
             </>
           ) : (
             <div className="no-results-card animate-scale-up" style={{ border: '1px solid var(--color-border)' }}>

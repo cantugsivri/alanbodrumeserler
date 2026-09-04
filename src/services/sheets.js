@@ -150,3 +150,66 @@ export async function fetchArtworks() {
     return fallbackArtworks;
   }
 }
+
+// --- Cache-first performans stratejisi ---
+
+const CACHE_DATA_KEY = 'alan_art_cached_artworks';
+
+/**
+ * Anında veri döndürür: önce localStorage cache, yoksa yerel JSON.
+ * Hiç bekleme olmaz — ekran anında dolar.
+ * @returns {Array<Object>}
+ */
+export function getCachedArtworks() {
+  try {
+    const cached = localStorage.getItem(CACHE_DATA_KEY);
+    if (cached) {
+      const parsed = JSON.parse(cached);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        console.log(`Instant load: ${parsed.length} artworks from cache.`);
+        return parsed;
+      }
+    }
+  } catch (e) {
+    // Cache bozuksa sessizce geç
+  }
+  console.log(`Instant load: ${fallbackArtworks.length} artworks from local JSON.`);
+  return fallbackArtworks;
+}
+
+/**
+ * Arka planda Google Sheets'ten güncel veriyi çeker.
+ * Farklılık varsa callback çağırır ve cache'i günceller.
+ * @param {function(Array<Object>): void} onUpdate - Yeni veri geldiğinde çağrılır
+ */
+export function refreshArtworksInBackground(onUpdate) {
+  const sheetURL = getSavedSheetURL();
+  if (!sheetURL) return;
+
+  const separator = sheetURL.includes('?') ? '&' : '?';
+  const fetchURL = `${sheetURL}${separator}_cb=${Date.now()}`;
+
+  fetch(fetchURL)
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return res.text();
+    })
+    .then(csvText => {
+      const freshData = parseCSV(csvText);
+      if (!freshData || freshData.length === 0) return;
+
+      // Cache'e kaydet
+      try {
+        localStorage.setItem(CACHE_DATA_KEY, JSON.stringify(freshData));
+      } catch (e) {
+        // localStorage dolu olabilir, sessizce geç
+      }
+
+      // Callback ile bildir
+      console.log(`Background refresh: ${freshData.length} artworks from Google Sheets.`);
+      if (onUpdate) onUpdate(freshData);
+    })
+    .catch(err => {
+      console.warn('Background refresh failed:', err.message);
+    });
+}
